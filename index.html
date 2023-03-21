@@ -4,38 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/45758e0c8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="module" src="index.js"></script>
   </head>
 
   <body>
-    <div class="header">
-      <div class="logo">LOGO</div>
-
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Services</a></li>
-        </ul>
-      </nav>
-    </div>
     <div class="container">
-      <div class="text">
-        <h1>Hi. I'm <span class="typing"></span></h1>
+      <div class="header">
+        <!-- Header tops -->
+        <div class="row top--header">
+          <!-- Header logo -->
+          <div class="col-md-4 logo">LOGO</div>
 
-        <div class="btn">
-          <button>Contact</button>
-          <a href="/img/resume.pdf" download>
-            <button>Download CV</button>
-          </a>
+          <!-- Header links -->
+          <div class="col-md-8 header--links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="profile">
-        <img src="/img/profile.jpg" alt="profile pic" />
+
+        <!-- Header intro -->
+        <div class="row">
+          <!-- Intro text -->
+          <div class="col-md-7 text">
+            <h1>Hi. I'm <span class="typing"></span></h1>
+
+            <div class="btn">
+              <button>Contact</button>
+              <a href="/img/resume.pdf" download>
+                <button>Download CV</button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Intro pics -->
+          <div class="col-md-5 profile">
+            <img src="/img/profile.jpg" alt="profile pic" />
+          </div>
+        </div>
       </div>
 
       <!-- loader -->

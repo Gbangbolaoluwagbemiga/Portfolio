@@ -4,50 +4,52 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
+/* Default colors */
+:root {
+  --cool-color: #01132d;
 }
 body {
   width: 100%;
   min-height: 100vh;
   background: #01132d;
   color: #fff;
+  text-decoration: none;
+  outline: none;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
-.header {
+/* Header styles */
+.top--header {
+  margin-bottom: 12vh;
+}
+
+.header--links ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 20px 20px 70px;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  font-size: 1.5vw;
 }
-.logo {
-  font-size: 45px;
-  font-weight: 700;
-}
-nav ul {
-  display: flex;
-}
-nav ul li {
+.header--links ul li {
   list-style: none;
   margin-inline: 30px;
 }
-nav ul li a {
+.header--links ul li a {
   color: #fff;
-  text-decoration: none;
+  transition: all, 0.3s;
 }
-nav ul li:hover a {
+.header--links ul li:hover a {
   color: rgba(253, 189, 49);
-  transition: 0.3s;
 }
 
-.container {
+/* .container {
   padding: 0 100px;
   margin-top: 50px;
   display: flex;
-}
+} */
 .text h1 {
-  font-size: 70px;
-  line-height: 150px;
+  font-size: 3.5vw;
+  /* line-height: 150px; */
   letter-spacing: 2px;
 }
 .text p {
@@ -76,7 +78,7 @@ nav ul li:hover a {
 .profile img {
   position: absolute;
   bottom: 0;
-  width: 450px;
+  width: 50px;
   right: 30px;
   pointer-events: none;
 }
@@ -125,4 +127,25 @@ nav ul li:hover a {
   width: 260px;
   display: inline-block;
   margin: auto;
+}
+
+/* smaller screen responsiveness */
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+}
+
+/* larger screen responsiveness */
+@media screen and (min-width: 800px) {
+  /* Header responsiveness */
+
+  .logo {
+    font-size: 4vw;
+    font-weight: 700;
+  }
+
+  .header--links {
+  }
 }
