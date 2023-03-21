@@ -83,25 +83,46 @@ nav ul li:hover a {
 
 /* shape */
 .shape {
-  position: relative;
-  margin: auto;
-  width: 0;
-  height: 0;
   /* background: black; */
   /* border: solid black; */
   animation-name: loader;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   /* width: 100px;
   height: 0;
   */
+  background: orange;
+  /* clip-path: polygon(0 50%, 50% 100%, 100% 50%, 50% 0); */
+  width: 260px;
+  display: inline-block;
+  margin-left: 0%;
+}
+
+.shape::before {
+  content: '';
+  display: block;
+  padding-top: 97.73%;
 }
 
 @keyframes loader {
   0% {
+    clip-path: polygon(0 50%, 0% 0%, 0% 0%, 0% 0);
   }
   25% {
+    clip-path: polygon(0 50%, 50% 100%, 0% 0%, 0% 0);
+  }
+  50% {
+    clip-path: polygon(0 50%, 50% 100%, 100% 50%, 0% 0);
   }
   100% {
+    clip-path: polygon(0 50%, 50% 100%, 100% 50%, 50% 0);
   }
+}
+
+.box {
+  background: orange;
+  clip-path: polygon(0 50%, 50% 100%, 100% 50%, 50% 0);
+  width: 260px;
+  display: inline-block;
+  margin: auto;
 }
