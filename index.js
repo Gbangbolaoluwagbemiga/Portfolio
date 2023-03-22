@@ -34,7 +34,6 @@ headerObserver.observe(header);
 // Hamburger functionality
 function handleViewportChange() {
   const mediaQueryList = window.matchMedia('(max-width: 800px)');
-  // console.log(mediaQueryList);
 
   if (mediaQueryList.matches) {
     listItems.style.display = 'block';

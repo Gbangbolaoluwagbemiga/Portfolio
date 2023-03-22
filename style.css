@@ -101,9 +101,13 @@ body {
 
   .header--links ul {
     display: none;
+    padding: 5vw;
     position: absolute;
     top: 3vh;
     right: -10vw;
+  }
+  .header--links ul li {
+    padding: 5vw;
   }
   .ham--icon {
     font-size: 4vw;
