@@ -47,6 +47,11 @@ body {
   color: rgba(253, 189, 49);
 }
 
+/* Hamsburger */
+.ham--icon {
+  display: none;
+}
+
 .text h1 {
   font-size: 3.5vw;
   /* line-height: 150px; */
@@ -95,8 +100,16 @@ body {
   }
 
   .header--links ul {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    right: -10vw;
+  }
+  .ham--icon {
+    font-size: 4vw;
     display: block;
-    right: 0;
+    position: absolute;
+    right: 13.5vw;
   }
 }
 

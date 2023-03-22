@@ -3,7 +3,10 @@ const container = document.querySelector('.container');
 const loader = document.querySelector('.loader');
 const header = document.querySelector('.header');
 const topHeader = document.querySelector('.top--header');
+const hamsburger = document.querySelector('.ham--icon');
+const listItems = document.querySelector('ul');
 
+let clicked = true;
 // loader function
 // setTimeout(() => {
 //   loader.classList.add('hidden');
@@ -27,6 +30,25 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(header);
+
+// Hamburger functionality
+function handleViewportChange() {
+  const mediaQueryList = window.matchMedia('(max-width: 800px)');
+  // console.log(mediaQueryList);
+
+  if (mediaQueryList.matches) {
+    listItems.style.display = 'block';
+  }
+}
+hamsburger.addEventListener('click', function () {
+  handleViewportChange();
+  if (clicked) {
+    listItems.style.display = 'block';
+  } else {
+    listItems.style.display = 'none';
+  }
+  clicked = !clicked;
+});
 
 // Text animation
 const options = {
