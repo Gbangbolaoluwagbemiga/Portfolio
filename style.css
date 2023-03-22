@@ -18,6 +18,9 @@ body {
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+.hidden {
+  display: none;
+}
 /* Header styles */
 .top--header {
   margin-bottom: 12vh;

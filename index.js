@@ -1,10 +1,18 @@
-// Sticky navigation: Intersection Observer API
-
+// Event handlers
+const container = document.querySelector('.container');
+const loader = document.querySelector('.loader');
+const loaderText = document.querySelector('.loader--text');
 const header = document.querySelector('.header');
 const topHeader = document.querySelector('.top--header');
-const navHeight = topHeader.getBoundingClientRect().height;
-console.log(navHeight);
 
+// loader function
+setTimeout(() => {
+  loader.classList.add('hidden');
+  container.classList.remove('hidden');
+}, 5000);
+
+// Sticky navigation: Intersection Observer API
+const navHeight = topHeader.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
   // console.log(entry);

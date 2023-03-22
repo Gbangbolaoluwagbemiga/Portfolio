@@ -1,31 +1,24 @@
-/* .hexagon {
-  width: 100px;
-  height: 55px;
-  position: relative;
-  background-color: #6c5ce7;
-  margin: 27.5px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: '';
+.loader--text {
   position: absolute;
-  width: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  left: 20;
+  text-align: center;
+  font-size: 2.5vw;
+  opacity: 0;
+  animation: bounceInRight;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 27.5px solid #6c5ce7;
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 27.5px solid #6c5ce7;
-} */
-
 .loader {
   display: flex;
   justify-content: center;
