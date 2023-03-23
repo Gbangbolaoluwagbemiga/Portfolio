@@ -48,7 +48,8 @@ body {
 }
 
 /* Hamsburger */
-.ham--icon {
+.ham--icon,
+.cancel--icon {
   display: none;
 }
 
