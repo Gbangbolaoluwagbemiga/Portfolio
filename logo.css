@@ -1,0 +1,36 @@
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.dev {
+  display: inline-block;
+  position: relative;
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: -10px;
+    left: 10px;
+  }
+  50% {
+    top: 0;
+    left: 20px;
+  }
+  75% {
+    top: -10px;
+    left: 30px;
+  }
+
+  100% {
+    top: 0px;
+    left: 40px;
+  }
+}

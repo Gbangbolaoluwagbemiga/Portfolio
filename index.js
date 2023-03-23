@@ -1,3 +1,5 @@
+'use strict';
+
 // Event handlers
 const container = document.querySelector('.container');
 const loader = document.querySelector('.loader');
@@ -7,7 +9,7 @@ const hamsburger = document.querySelector('.ham--icon');
 const cancelOpt = document.querySelector('.cancel--icon');
 const listItems = document.querySelector('ul');
 
-let clicked = true;
+let clicked;
 // loader function
 // setTimeout(() => {
 //   loader.classList.add('hidden');
@@ -25,7 +27,6 @@ const hamsburg = function (hamsDisplay, cancelDisplay, listDisplay) {
 const navHeight = topHeader.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
-  // console.log(entry);
 
   if (!entry.isIntersecting) topHeader.classList.add('sticky');
   else topHeader.classList.remove('sticky');
@@ -42,14 +43,15 @@ headerObserver.observe(header);
 // Hamsburger functionality
 function handleViewportChange() {
   const mediaQueryList = window.matchMedia('(max-width: 800px)');
-
-  if (mediaQueryList.matches) {
+  if (mediaQueryList.matches && clicked) {
     listItems.style.display = 'block';
   }
+  if (!mediaQueryList) return (listItems.style.display = 'flex');
 }
-
+handleViewportChange();
 // Hamsburger event handlers
 hamsburger.addEventListener('click', function () {
+  clicked = true;
   handleViewportChange();
   if (clicked) {
     hamsburg('none', 'block', 'block');
@@ -64,6 +66,7 @@ hamsburger.addEventListener('click', function () {
 
 // Dismissal: Hamsburger
 cancelOpt.addEventListener('click', function () {
+  handleViewportChange();
   hamsburg('block', 'none', 'none');
 });
 
