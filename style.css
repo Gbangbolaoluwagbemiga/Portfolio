@@ -101,20 +101,30 @@ body {
   }
 
   .header--links ul {
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
     display: none;
-    padding: 5vw;
     position: absolute;
     top: 3vh;
-    right: -10vw;
+    right: 10vw;
   }
+
   .header--links ul li {
-    padding: 5vw;
+    padding: 2rem 6rem;
   }
-  .ham--icon {
+  .header--links ul li a {
+    color: #01132d;
+  }
+  .ham--icon,
+  .cancel--icon {
     font-size: 4vw;
     display: block;
     position: absolute;
-    right: 13.5vw;
+    right: 3.25rem;
+  }
+  .cancel--icon {
+    display: none;
   }
 }
 
