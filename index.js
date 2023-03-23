@@ -5,6 +5,7 @@ const container = document.querySelector('.container');
 const loader = document.querySelector('.loader');
 const header = document.querySelector('.header');
 const topHeader = document.querySelector('.top--header');
+const subHeader = document.querySelector('.sub--header');
 const hamsburger = document.querySelector('.ham--icon');
 const cancelOpt = document.querySelector('.cancel--icon');
 const listItems = document.querySelector('ul');
@@ -15,6 +16,10 @@ let clicked;
 //   loader.classList.add('hidden');
 //   container.classList.remove('hidden');
 // }, 5000);
+
+setTimeout(() => {
+  subHeader.style.opacity = 1;
+}, 2000);
 
 // Helper functions
 const hamsburg = function (hamsDisplay, cancelDisplay, listDisplay) {

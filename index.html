@@ -51,7 +51,7 @@
       <!--hidden-->
       <div class="header">
         <!-- Header tops -->
-        <div class="row top--header">
+        <div class="row top--header animate__bounce">
           <!-- Header logo -->
           <div class="col-md-3 logo">
             <span class="dev">devOp</span>
@@ -75,15 +75,18 @@
         </div>
 
         <!-- Header intro -->
-        <div class="row">
+        <div class="row sub--header">
           <!-- Intro text -->
-          <div class="col-md-7 text">
-            <h1>Hi. I'm <span class="typing"></span></h1>
+          <div class="col-md-7 animate__fadeInLeft text">
+            <h1 class>Hi. I'm <span class="typing"></span></h1>
 
-            <div class="btn">
-              <button>Contact</button>
-              <a href="/img/resume.pdf" download>
-                <button>Download CV</button>
+            <div class="row">
+              <a href="#" class="col-5">
+                <button id="btns">Contact</button>
+              </a>
+
+              <a href="/img/resume.pdf" download class="col-5">
+                <button id="btns">CV</button>
               </a>
             </div>
           </div>
