@@ -24,7 +24,9 @@ body {
 .sub--header {
   opacity: 0;
 }
-
+.logo {
+  display: none;
+}
 .text {
   animation-name: fadeInLeft;
   animation-duration: 2s;
