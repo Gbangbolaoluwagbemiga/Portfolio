@@ -15,17 +15,19 @@ const topHeaderExcluded = document.querySelector('ul');
 let clicked;
 container.addEventListener('click', function (e) {
   const link = e.target;
+  console.log(link);
+
   if (listItems.style.display === 'block') {
     if (
       link.classList.contains('ham--icon') ||
-      link.classList.contains('cancel--icon')
+      link.classList.contains('cancel--icon') ||
+      link.classList.contains('links')
     )
       return;
     handleViewportChange();
     hamsburg('block', 'none', 'none');
   }
 });
-console.log(clicked);
 
 // elements.forEach(el => {
 //   el.addEventListener('click', function () {

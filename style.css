@@ -78,7 +78,7 @@ body {
 #btns {
   width: 100%;
   text-align: center;
-  padding: 10px 40px;
+  padding: 10px;
   font-size: 16px;
   background: transparent;
   color: #fff;
@@ -111,7 +111,7 @@ body {
   width: 90%;
   height: 80%;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
 }
 .top--header.sticky {
   position: fixed;
@@ -127,6 +127,10 @@ body {
   .logo {
     font-size: 2.5vw;
     font-weight: 600;
+  }
+  .profile--pics img {
+    order: 1;
+    height: 70%;
   }
 
   .header--links ul {
