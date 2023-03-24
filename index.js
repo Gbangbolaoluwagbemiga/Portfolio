@@ -9,17 +9,41 @@ const subHeader = document.querySelector('.sub--header');
 const hamsburger = document.querySelector('.ham--icon');
 const cancelOpt = document.querySelector('.cancel--icon');
 const listItems = document.querySelector('ul');
+const topHeaderExcluded = document.querySelector('ul');
+// select the container and all its child elements
 
 let clicked;
+container.addEventListener('click', function (e) {
+  const link = e.target;
+  if (listItems.style.display === 'block') {
+    if (
+      link.classList.contains('ham--icon') ||
+      link.classList.contains('cancel--icon')
+    )
+      return;
+    handleViewportChange();
+    hamsburg('block', 'none', 'none');
+  }
+});
+console.log(clicked);
+
+// elements.forEach(el => {
+//   el.addEventListener('click', function () {
+//   });
+// });
+
 //  loader function
-setTimeout(() => {
-  loader.classList.add('hidden');
-  container.classList.remove('hidden');
-}, 5000);
+// setTimeout(() => {
+//   loader.classList.add('hidden');
+//   container.classList.remove('hidden');
+// }, 5000);
 
 setTimeout(() => {
   subHeader.style.opacity = 1;
-}, 7100);
+}, 2100);
+// setTimeout(() => {
+//   subHeader.style.opacity = 1;
+// }, 7100);
 
 // Helper functions
 const hamsburg = function (hamsDisplay, cancelDisplay, listDisplay) {
@@ -55,7 +79,7 @@ function handleViewportChange() {
 }
 handleViewportChange();
 // Hamsburger event handlers
-hamsburger.addEventListener('click', function () {
+hamsburger.addEventListener('click', function (e) {
   clicked = true;
   handleViewportChange();
   if (clicked) {
