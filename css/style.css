@@ -18,14 +18,28 @@ body {
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+}
 .hidden {
   display: none;
 }
-.sub--header {
-  opacity: 0;
+
+.header {
+  border-bottom: 2px solid black;
+}
+.sub--header,
+.top--header {
+  /* opacity: 0; */
+  /* faking it */
+  opacity: 1;
 }
 .logo {
-  display: none;
+  /* display: none; */
+  /* faking it */
+  display: inline-block;
 }
 .text {
   animation-name: fadeInLeft;
@@ -38,19 +52,16 @@ body {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
-/* .active::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  background: white;
-  width: 100%;
-  height: 0.2rem;
-  bottom: -6px;
-} */
+
 /* Header styles */
 .top--header {
   margin-bottom: 12vh;
 }
+.top--header.sticky {
+  background: red;
+  position: fixed;
+}
+
 .header--links ul {
   transition: all 0.5s;
 }
@@ -68,12 +79,23 @@ body {
   color: rgba(253, 189, 49);
 }
 
-/* Hamsburger */
+/* Header text */
+.sub--header {
+  height: 60vh;
+}
 
 .text h1 {
   font-size: 3vw;
   /* line-height: 150px; */
   letter-spacing: 2px;
+}
+
+.pretext {
+  font-weight: 500;
+  text-align: left;
+  width: 90%;
+  padding: 3px 5px;
+  margin-right: 10px;
 }
 
 /* Header Buttons */
@@ -99,29 +121,26 @@ body {
   background: rgba(253, 189, 49);
   border-color: rgba(253, 189, 49);
 }
-/* .btn {
-  margin-top: 40px;
-}
-.btn button {
- 
-}
-.btn a {
- 
-} */
 .profile--pics img {
   border-radius: 10%;
-  width: 90%;
-  height: 80%;
+  width: 80%;
+  height: 60%;
   text-align: center;
   margin: 20px;
 }
-.top--header.sticky {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
-}
+
 .ham--icon,
 .cancel--icon {
   display: none;
+}
+
+/* section 2 About me  */
+.about__heading {
+  text-align: center;
+  margin: 5px 20px;
+}
+.dummy--pics {
+  width: 80%;
 }
 
 /* smaller screen responsiveness */
@@ -130,9 +149,28 @@ body {
     font-size: 2.5vw;
     font-weight: 600;
   }
+  .top--header {
+    margin-bottom: 7vh;
+  }
+
   .profile--pics img {
     order: 1;
     height: 70%;
+  }
+
+  .dummy--pics {
+    width: 90vw;
+    height: 40vh;
+  }
+  .text h1 {
+    font-size: 5vw;
+    letter-spacing: 2px;
+  }
+  .sub--header {
+    height: 100%;
+  }
+  .pretext {
+    margin-right: 0;
   }
 
   .header--links ul {
@@ -176,9 +214,13 @@ body {
 
   .header--links ul {
     display: flex;
+    font-size: 1.5vw;
+  }
+  /* .header--links ul {
+    display: flex;
     position: absolute;
     right: 0;
     top: 20%;
     font-size: 1.5vw;
-  }
+  } */
 }

@@ -35,7 +35,7 @@
 
   <body>
     <!-- Loader -->
-    <div class="loader">
+    <!-- <div class="loader">
       <div class="hexagon"></div>
       <div class="hexagon"></div>
       <div class="hexagon"></div>
@@ -44,10 +44,10 @@
       <div class="hexagon"></div>
 
       <div class="loader--text animate__bounceInRight">devOp👨‍💻</div>
-    </div>
+    </div> -->
 
     <!-- Body -->
-    <div class="container hidden">
+    <div class="container">
       <!--hidden-->
       <div class="header">
         <!-- Header tops -->
@@ -76,7 +76,26 @@
         <div class="row sub--header">
           <!-- Intro text -->
           <div class="col-md-7 animate__fadeInLeft text">
-            <h1 class>Hi. I'm <span class="typing"></span></h1>
+            <h1>Hi. I'm <span class="typing"></span></h1>
+            <p class="pretext">
+              I am thrilled to showcase my skills and experience in the world of
+              frontend development, In this portfolio, you will find a
+              collection of projects that demonstrate my abilities in areas such
+              as HTML, CSS, JavaScript, and other frontend technologies.
+              <br />
+              <!-- 
+                .Whether you are a potential
+              employer, colleague, or simply interested in learning more about
+              my work as a frontend developer, I hope that you will find this
+              portfolio informative and engaging. -->
+
+              Please feel free to explore the various sections of my portfolio
+              and don't hesitate to reach out if you have any questions or would
+              like to discuss a potential collaboration.
+              <!--
+                Thank you for taking
+              the time to visit, and I look forward to connecting with you soon. -->
+            </p>
 
             <div class="row">
               <a href="#" class="col-5">
@@ -91,10 +110,41 @@
 
           <!-- Intro pics -->
           <div class="col-md-5 profile--pics animate__fadeInLeft text">
-            <img src="/img/profile.jpg" alt="profile pic" />
+            <img
+              src="/img/profile.jpg"
+              class="profile--pics"
+              alt="dummy pics"
+            />
           </div>
         </div>
       </div>
+
+      <section class="about">
+        <h1 class="about__heading my-5">About me</h1>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="/img/about-us.png" class="dummy--pics" alt="" />
+          </div>
+
+          <div class="col-md-6">
+            <p class="info--me">
+              I'm Gbangbola oluwagbemiga( tech alias "devOp"), an hydrology
+              Student transitioning into Web development. <br />
+              I'm a self-taught Frontend Developer specialized in building web
+              application and responsive websites. <br />
+              <br />
+
+              My approach to development is to keep things simple and intuitive,
+              with a focus on usability and accessibility. I strive to make sure
+              that my code is clean, efficient, and well-documented, so that
+              others can understand and build upon it in the future.
+            </p>
+          </div>
+        </div>
+
+        <hr />
+      </section>
     </div>
   </body>
 </html>
