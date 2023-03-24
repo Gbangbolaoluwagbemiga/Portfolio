@@ -11,15 +11,15 @@ const cancelOpt = document.querySelector('.cancel--icon');
 const listItems = document.querySelector('ul');
 
 let clicked;
-// loader function
-// setTimeout(() => {
-//   loader.classList.add('hidden');
-//   container.classList.remove('hidden');
-// }, 5000);
+//  loader function
+setTimeout(() => {
+  loader.classList.add('hidden');
+  container.classList.remove('hidden');
+}, 5000);
 
 setTimeout(() => {
   subHeader.style.opacity = 1;
-}, 2000);
+}, 7100);
 
 // Helper functions
 const hamsburg = function (hamsDisplay, cancelDisplay, listDisplay) {
