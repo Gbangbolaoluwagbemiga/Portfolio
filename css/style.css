@@ -26,6 +26,9 @@ hr {
 .hidden {
   display: none;
 }
+.show {
+  display: inline;
+}
 
 /* .header {
   border-bottom: 2px solid black;
@@ -157,11 +160,19 @@ hr {
 .skills-acquired {
   width: 20vw;
 }
-.technical--skills {
+/* .technical--skills {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+} */
+
+.btn-skills {
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.active--btn--skills {
+  background-color: rgba(253, 189, 49);
 }
 
 /* Lazy loading images */

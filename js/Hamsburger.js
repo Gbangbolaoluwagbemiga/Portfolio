@@ -8,7 +8,7 @@ let clicked;
 
 export const hamsburger = function (e) {
   const link = e.target;
-  console.log(link);
+  // console.log(link);
 
   if (listItems.style.display === 'block') {
     if (

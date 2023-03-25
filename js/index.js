@@ -106,3 +106,34 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach(img => imgObserver.observe(img));
+
+// skill buttons
+const btnContainer = document.querySelector('.btn--container');
+const btnSkills = document.querySelectorAll('.btn-skills');
+const skillContent = document.querySelectorAll('.skill--content');
+btnContainer.addEventListener('click', function (e) {
+  const link = e.target.closest('.btn-skills');
+  if (!link) return;
+  // console.log(link.dataset.tab);
+
+  // Remove active classes
+  btnSkills.forEach(t => t.classList.remove('active--btn--skills'));
+  skillContent.forEach(c => c.classList.add('hidden'));
+  skillContent.forEach(c => c.classList.add('hidden'));
+
+  // Activate tab
+  link.classList.add('active--btn--skills');
+
+  // // Activate content area
+  // btnSkills.forEach(t => {
+  //   if (t.dataset.tab === '1') {
+  //     document
+  //       .querySelector(`.operations__content--${1}`)
+  //       .classList.add('show');
+  //   } else {
+  //     document
+  //       .querySelector(`.operations__content--${2}`)
+  //       .classList.add('show');
+  //   }
+  });
+});
