@@ -83,6 +83,9 @@ hr {
 .sub--header {
   height: 60vh;
 }
+.animated--text {
+  margin: 10px 5px;
+}
 
 .text h1 {
   font-size: 3vw;

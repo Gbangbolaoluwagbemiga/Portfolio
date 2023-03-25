@@ -1,6 +1,8 @@
 export const hamsburgerIcon = document.querySelector('.ham--icon');
 export const cancelOpt = document.querySelector('.cancel--icon');
 const listItems = document.querySelector('ul');
+const reorderText = document.querySelector('.reorder_text');
+const reorderImg = document.querySelector('.reorder_img');
 
 let clicked;
 
@@ -52,4 +54,9 @@ export function handleViewportChange() {
     listItems.style.display = 'block';
   }
   if (!mediaQueryList) return (listItems.style.display = 'flex');
+
+  if (mediaQueryList.matches) {
+    reorderImg.classList.add('order-1');
+    reorderText.classList.add('order-2');
+  }
 }

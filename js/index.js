@@ -81,11 +81,28 @@ chooseView.addEventListener('click', function () {
     : (chooseViewText.innerText = 'see less');
 });
 
-// readMoreText.addEventListener('click', () => {
-//   textContainer.classList.toggle('show');
-//   if (readMoreText.innerText === 'See More') {
-//     readMoreText.innerText = 'See Less';
-//   } else {
-//     readMoreText.innerText = 'See More';
-//   }
-// });
+// Lazy loading images
+const imgTargets = document.querySelectorAll('img[data-src]');
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  // Replace src with data-src
+  entry.target.src = entry.target.dataset.src;
+
+  entry.target.addEventListener('load', function () {
+    entry.target.classList.remove('lazy-img');
+  });
+
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0,
+  rootMargin: '-50px',
+});
+
+imgTargets.forEach(img => imgObserver.observe(img));
