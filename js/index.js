@@ -51,7 +51,7 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-${navHeight}px`,
 });
 
-headerObserver.observe(pretext);
+// headerObserver.observe(pretext);
 
 // Hamsburger functionality
 Hamsburg.handleViewportChange();

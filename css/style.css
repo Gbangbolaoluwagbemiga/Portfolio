@@ -27,9 +27,9 @@ hr {
   display: none;
 }
 
-.header {
+/* .header {
   border-bottom: 2px solid black;
-}
+} */
 .sub--header,
 .top--header {
   /* opacity: 0; */
@@ -150,6 +150,18 @@ hr {
 .dummy--pics {
   width: 80%;
 }
+
+/* section 3 skills acquired */
+.skills-acquired {
+  width: 20vw;
+}
+.technical--skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /* Lazy loading images */
 
 img {
@@ -217,6 +229,10 @@ img {
   }
   .cancel--icon {
     display: none;
+  }
+
+  .skills-acquired {
+    width: 30vw;
   }
 }
 
