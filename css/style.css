@@ -138,6 +138,7 @@ hr {
 }
 /* section pretext show text */
 .choose--view {
+  cursor: pointer;
   color: rgba(253, 189, 49);
   text-decoration: underline;
 }
@@ -155,25 +156,37 @@ hr {
 
 /* section 3 skills acquired */
 .skills-acquired {
+  width: 10vw;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.skills-acquired:hover {
   width: 20vw;
+  /* background-color: red; */
 }
 .technical--heading {
   text-align: center;
 }
 
+.skill--content {
+  transition: all 0.5s;
+}
+
 .btn-skills {
   border-radius: 10px;
   padding: 5px 15px;
+  transition: all 0.5s;
 }
 .active--btn--skills {
   background-color: rgba(253, 189, 49);
   border: 2px solid rgba(253, 189, 49);
+  transition: all 0.5s;
 }
 
 /* Lazy loading images */
 
 img {
-  transition: filter 0.5s;
+  transition: all 0.5s;
 }
 
 .lazy-img {
