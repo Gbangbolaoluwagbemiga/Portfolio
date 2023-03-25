@@ -144,6 +144,8 @@ hr {
 
 /* section 2 About me  */
 .about__heading {
+  display: block;
+  width: 100%;
   text-align: center;
   margin: 5px 20px;
 }
