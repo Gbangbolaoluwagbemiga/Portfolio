@@ -133,6 +133,11 @@ hr {
 .cancel--icon {
   display: none;
 }
+/* section pretext show text */
+.choose--view {
+  color: rgba(253, 189, 49);
+  text-decoration: underline;
+}
 
 /* section 2 About me  */
 .about__heading {

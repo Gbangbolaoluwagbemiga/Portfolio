@@ -68,3 +68,24 @@ const options = {
   loop: true,
 };
 const typed = new Typed('.typing', options);
+
+// section header pretext
+const readMoreText = document.querySelector('.read--more');
+const chooseView = document.querySelector('.choose--view');
+const chooseViewText = document.querySelector('.choose--view--text');
+
+chooseView.addEventListener('click', function () {
+  readMoreText.classList.toggle('hidden');
+  readMoreText.classList.contains('hidden')
+    ? (chooseViewText.innerText = 'see more')
+    : (chooseViewText.innerText = 'see less');
+});
+
+// readMoreText.addEventListener('click', () => {
+//   textContainer.classList.toggle('show');
+//   if (readMoreText.innerText === 'See More') {
+//     readMoreText.innerText = 'See Less';
+//   } else {
+//     readMoreText.innerText = 'See More';
+//   }
+// });
