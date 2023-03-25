@@ -119,21 +119,12 @@ btnContainer.addEventListener('click', function (e) {
   // Remove active classes
   btnSkills.forEach(t => t.classList.remove('active--btn--skills'));
   skillContent.forEach(c => c.classList.add('hidden'));
-  skillContent.forEach(c => c.classList.add('hidden'));
 
   // Activate tab
   link.classList.add('active--btn--skills');
 
   // // Activate content area
-  // btnSkills.forEach(t => {
-  //   if (t.dataset.tab === '1') {
-  //     document
-  //       .querySelector(`.operations__content--${1}`)
-  //       .classList.add('show');
-  //   } else {
-  //     document
-  //       .querySelector(`.operations__content--${2}`)
-  //       .classList.add('show');
-  //   }
-  });
+  document
+    .querySelector(`.operations__content--${link.dataset.tab}`)
+    .classList.remove('hidden');
 });
