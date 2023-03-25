@@ -16,23 +16,23 @@ const pretext = document.querySelector('.pretext');
 container.addEventListener('click', Hamsburg.hamsburger);
 
 // Loader implementation
-// setTimeout(() => {
-//   loader.classList.add('hidden');
-//   container.classList.remove('hidden');
-// }, 5000);
-// setTimeout(() => {
-//   logo.style.display = 'inline';
-//   topHeader.style.opacity = 1;
-// }, 6100);
+setTimeout(() => {
+  loader.classList.add('hidden');
+  container.classList.remove('hidden');
+}, 5000);
+setTimeout(() => {
+  logo.style.display = 'inline';
+  topHeader.style.opacity = 1;
+}, 6100);
 
-// setTimeout(() => {
-//   subHeader.style.opacity = 1;
-// }, 7100);
-
-//  faking the delay
 setTimeout(() => {
   subHeader.style.opacity = 1;
-}, 2100);
+}, 7100);
+
+//  faking the delay
+// setTimeout(() => {
+//   subHeader.style.opacity = 1;
+// }, 2100);
 
 //  Helper functions
 
