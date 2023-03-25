@@ -147,6 +147,15 @@ hr {
 .dummy--pics {
   width: 80%;
 }
+/* Lazy loading images */
+
+img {
+  transition: filter 0.5s;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}
 
 /* smaller screen responsiveness */
 @media screen and (max-width: 800px) {
