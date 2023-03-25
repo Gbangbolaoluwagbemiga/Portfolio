@@ -161,7 +161,7 @@ hr {
   transition: all 0.4s;
 }
 .skills-acquired:hover {
-  width: 20vw;
+  width: 12vw;
   /* background-color: red; */
 }
 .technical--heading {
@@ -253,8 +253,39 @@ img {
   }
 
   .skills-acquired {
-    width: 30vw;
+    width: 20vw;
   }
+  .skills-acquired:hover {
+    width: 22vw;
+    /* background-color: red; */
+  }
+}
+
+.skills-acquired {
+  transition: transform 0.5s;
+}
+
+.skill-name {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  transform: rotateX(90deg);
+  transition: transform 0.5s;
+  transform-origin: bottom;
+}
+
+.skill-icon-text:hover img {
+  transform: rotateX(90deg);
+}
+
+.skill-icon-text:hover .skill-name {
+  transform: rotateX(0deg);
 }
 
 /* larger screen responsiveness */
