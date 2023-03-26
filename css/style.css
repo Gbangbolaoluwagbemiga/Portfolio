@@ -219,15 +219,12 @@ img {
 }
 
 /* section Revealing */
-.section {
-  /* padding: 15rem 3rem; */
-  /* border-top: 1px solid #ddd; */
-
-  transition: transform 1s, opacity 1s;
+.sections {
+  transition: all 3s;
 }
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(10rem);
 }
 
 /* smaller screen responsiveness */
