@@ -309,25 +309,36 @@
       </section>
 
       <!-- contact me -->
-      <section class="contact sections"></section>
-      <div class="row">
-        <form
-          action="https://mail.google.com/mail/?view=cm&fs=1&to=gbangbolaphilip@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <label for="name" class="col-md-6">Name:</label>
-          <input type="text" name="name" id="name" required />
+      <section class="contact sections my-5"></section>
+      <form
+        action="https://mail.google.com/mail/?view=cm&fs=1&to=gbangbolaphilip@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="row">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="col-md-6 p-4 m-5"
+            placeholder="Name"
+            required
+          />
 
-          <label for="email" class="col-md-6">Email:</label>
-          <input type="email" name="email" id="email" required />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="col-md-6 p-4 m-5"
+            placeholder="Email"
+            required
+          />
+        </div>
 
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" rows="5" required></textarea>
+        <textarea name="message" id="message" rows="5" required></textarea>
 
-          <input type="submit" value="Send" />
-        </form>
-      </div>
+        <input type="submit" value="Send" />
+      </form>
     </div>
   </body>
 </html>
