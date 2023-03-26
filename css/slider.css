@@ -7,7 +7,7 @@
 
 .slider {
   max-width: 100vw;
-  height: 80vh;
+  height: 95vh;
   margin: 0;
   /* margin-left: 0; */
   position: relative;
@@ -114,8 +114,12 @@
     padding: 10px 0;
     margin: 10px 0;
   }
+  .slider {
+    height: 60vh;
+  }
+
   .slide {
-    left: 1px;
+    left: 0;
   }
 
   .slider__btn--left {
