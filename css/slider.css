@@ -20,22 +20,15 @@
   top: 0;
   width: 100%;
   height: 30rem;
-  padding: 10vw;
-  /* margin: 5vw; */
+  padding: 5vw 10vw;
+  margin: 5vw;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* THIS creates the animation! */
   transition: transform 2s;
 }
 
 .slide > img {
-  /* Only for images that have different size than slide */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 80vw;
+  height: 50vh;
 }
 
 .slider__btn {
@@ -96,9 +89,27 @@
   background-color: #888;
   opacity: 1;
 }
+.project--link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.code--link {
+  padding: 7px;
+  margin: 10px 0;
+  background-color: #ff851b;
+  border: 2px solid #ff851b;
+  border-radius: 5px;
+}
 
 @media screen and (max-width: 765px) {
   .slider__btn {
     top: 25vh;
+  }
+  .slide > img {
+    width: 100%;
+    height: 30%;
+    padding: 10px 0;
+    margin: 10px 0;
   }
 }
