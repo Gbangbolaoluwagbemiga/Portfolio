@@ -243,6 +243,7 @@ img {
   .profile--pics img {
     border-radius: 70%;
     height: 30vh;
+    width: 80vw;
   }
 
   .dummy--pics {
