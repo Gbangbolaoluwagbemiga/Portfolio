@@ -243,6 +243,8 @@ img {
 
   .profile--pics img {
     border-radius: 70%;
+    border: 2px solid #ff851b;
+    border-spacing: 10px;
     height: 30vh;
     width: 70vw;
   }
