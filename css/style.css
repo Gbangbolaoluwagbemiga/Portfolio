@@ -161,8 +161,10 @@ hr {
   width: 12vw;
   /* background-color: red; */
 }
-.technical--heading {
+.technical--heading,
+.about__heading {
   text-align: center;
+  color: #ff851b;
 }
 
 .skill--content {
@@ -208,6 +210,7 @@ hr {
   transform: rotateX(0deg);
 }
 
+/* General styling */
 /* Lazy loading images */
 
 img {
@@ -226,6 +229,7 @@ img {
   opacity: 0;
   transform: translateY(8rem);
 }
+/* General styling ends */
 
 /* smaller screen responsiveness */
 @media screen and (max-width: 800px) {
