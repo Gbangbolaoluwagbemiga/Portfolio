@@ -218,6 +218,18 @@ img {
   filter: blur(20px);
 }
 
+/* section Revealing */
+.section {
+  /* padding: 15rem 3rem; */
+  /* border-top: 1px solid #ddd; */
+
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 /* smaller screen responsiveness */
 @media screen and (max-width: 800px) {
   .logo {
