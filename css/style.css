@@ -229,8 +229,8 @@ img {
   }
 
   .profile--pics img {
-    order: 1;
-    height: 70%;
+    border-radius: 70%;
+    height: 30vh;
   }
 
   .dummy--pics {
