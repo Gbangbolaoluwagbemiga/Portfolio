@@ -154,3 +154,9 @@ allSections.forEach(function (section) {
 
 // project slider
 slider.slideProjects();
+
+// section mail
+// const mailMe = document.querySelector('.mail-me');
+// mailMe.addEventListener('submit', function (e) {
+//   e.preventDefault();
+// });

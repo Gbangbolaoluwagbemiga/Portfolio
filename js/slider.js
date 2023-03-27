@@ -87,12 +87,12 @@ export const slideProjects = function () {
   slides.forEach(s => {
     s.addEventListener('touchstart', event => {
       touchstartX = event.touches[0].clientX;
-      console.log(touchstartX);
     });
 
     s.addEventListener('touchend', event => {
       touchendX = event.changedTouches[0].clientX;
       handleSwipe();
+      console.log(touchendX);
     });
   });
   function handleSwipe() {
