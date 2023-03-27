@@ -96,7 +96,7 @@ export const slideProjects = function () {
     });
   });
   function handleSwipe() {
-    if (touchstartX < 100 || touchendX < 50) return;
+    if (touchstartX < 100 || touchendX < 100) return;
     if (touchendX < touchstartX) {
       nextSlide();
     }
