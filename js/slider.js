@@ -72,8 +72,6 @@ export const slideProjects = function () {
     e.key === 'ArrowRight' && nextSlide();
   });
 
-  document.addEventListener('t');
-
   dotContainer.addEventListener('click', function (e) {
     if (e.target.classList.contains('dots__dot')) {
       const {slide} = e.target.dataset;
@@ -90,6 +88,7 @@ let touchendX = 0;
 
 document.addEventListener('touchstart', event => {
   touchstartX = event.touches[0].clientX;
+  console.log(touchstartX);
 });
 
 document.addEventListener('touchend', event => {
