@@ -64,7 +64,7 @@
   position: absolute;
   padding-top: 10px;
   margin-top: 10px;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -115,7 +115,7 @@
     margin: 10px 0;
   }
   .slider {
-    height: 70vh;
+    height: 72vh;
   }
 
   .slide {
