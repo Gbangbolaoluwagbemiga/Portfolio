@@ -79,30 +79,30 @@ export const slideProjects = function () {
       activateDot(slide);
     }
   });
+
+  // Get the element that you want to add the swipe listener to
+
+  let touchstartX = 0;
+  let touchendX = 0;
+
+  slides.forEach(s => {
+    s.addEventListener('touchstart', event => {
+      touchstartX = event.touches[0].clientX;
+      console.log(touchstartX);
+    });
+
+    s.addEventListener('touchend', event => {
+      touchendX = event.changedTouches[0].clientX;
+      handleSwipe();
+    });
+  });
+  function handleSwipe() {
+    if (touchendX < touchstartX) {
+      prevSlide();
+    }
+
+    if (touchendX > touchstartX) {
+      nextSlide();
+    }
+  }
 };
-
-// Get the element that you want to add the swipe listener to
-
-let touchstartX = 0;
-let touchendX = 0;
-
-slides.forEach(s => {
-  s.addEventListener('touchstart', event => {
-    touchstartX = event.touches[0].clientX;
-    console.log(touchstartX);
-  });
-
-  s.addEventListener('touchend', event => {
-    touchendX = event.changedTouches[0].clientX;
-    handleSwipe();
-  });
-});
-function handleSwipe() {
-  if (touchendX < touchstartX) {
-    prevSlide();
-  }
-
-  if (touchendX > touchstartX) {
-    nextSlide();
-  }
-}
