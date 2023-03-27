@@ -72,6 +72,8 @@ export const slideProjects = function () {
     e.key === 'ArrowRight' && nextSlide();
   });
 
+  document.addEventListener('t');
+
   dotContainer.addEventListener('click', function (e) {
     if (e.target.classList.contains('dots__dot')) {
       const {slide} = e.target.dataset;
@@ -80,3 +82,27 @@ export const slideProjects = function () {
     }
   });
 };
+
+// Get the element that you want to add the swipe listener to
+
+let touchstartX = 0;
+let touchendX = 0;
+
+document.addEventListener('touchstart', event => {
+  touchstartX = event.touches[0].clientX;
+});
+
+document.addEventListener('touchend', event => {
+  touchendX = event.changedTouches[0].clientX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  if (touchendX < touchstartX) {
+    prevSlide();
+  }
+
+  if (touchendX > touchstartX) {
+    nextSlide();
+  }
+}
