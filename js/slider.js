@@ -86,16 +86,17 @@ export const slideProjects = function () {
 let touchstartX = 0;
 let touchendX = 0;
 
-document.addEventListener('touchstart', event => {
-  touchstartX = event.touches[0].clientX;
-  console.log(touchstartX);
-});
+slides.forEach(s => {
+  s.addEventListener('touchstart', event => {
+    touchstartX = event.touches[0].clientX;
+    console.log(touchstartX);
+  });
 
-document.addEventListener('touchend', event => {
-  touchendX = event.changedTouches[0].clientX;
-  handleSwipe();
+  s.addEventListener('touchend', event => {
+    touchendX = event.changedTouches[0].clientX;
+    handleSwipe();
+  });
 });
-
 function handleSwipe() {
   if (touchendX < touchstartX) {
     prevSlide();
