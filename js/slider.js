@@ -80,8 +80,7 @@ export const slideProjects = function () {
     }
   });
 
-  // Get the element that you want to add the swipe listener to
-
+  // swiper functionality
   let touchstartX = 0;
   let touchendX = 0;
 
@@ -97,6 +96,7 @@ export const slideProjects = function () {
     });
   });
   function handleSwipe() {
+    if (touchstartX < 100 || touchendX < 50) return;
     if (touchendX < touchstartX) {
       nextSlide();
     }
