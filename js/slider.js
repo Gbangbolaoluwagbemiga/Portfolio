@@ -98,11 +98,11 @@ export const slideProjects = function () {
   });
   function handleSwipe() {
     if (touchendX < touchstartX) {
-      prevSlide();
+      nextSlide();
     }
 
     if (touchendX > touchstartX) {
-      nextSlide();
+      prevSlide();
     }
   }
 };
