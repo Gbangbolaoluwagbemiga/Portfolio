@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Default colors */
 :root {
   --cool-color: #01132d;
@@ -16,7 +19,6 @@ body {
   text-decoration: none;
   outline: none;
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
 }
 hr {
   border: none;
@@ -311,6 +313,11 @@ textarea {
   background: red;
   bottom: 5%;
 }
+.social-icon {
+  font-size: 3.5rem;
+  padding: 1.5rem;
+  margin: auto;
+}
 
 /* footer */
 .back-up {
@@ -327,8 +334,8 @@ textarea {
   text-align: center;
 }
 /* General styling */
-/* Lazy loading images */
 
+/* Lazy loading images */
 img {
   transition: all 0.5s;
 }
@@ -422,6 +429,10 @@ img {
   .contact-modal {
     height: 80vh;
   }
+
+  .social-icon {
+    font-size: 2.5rem;
+  }
 }
 
 /* larger screen responsiveness */
@@ -451,6 +462,7 @@ img {
   .back-up {
     right: 20%;
     bottom: 0;
+    font-size: 40px;
   }
 
   /* .header--links ul {
