@@ -53,6 +53,23 @@ hr {
 }
 
 /* Header styles */
+/* #header {
+  width: 100%;
+  margin: 0.75rem;
+}
+.nav__links {
+  display: flex;
+  text-align: right;
+}
+.nav__item {
+  list-style: none;
+  margin-left: 1.5rem;
+}
+.overall-header.sticky {
+  background: red;
+  position: fixed;
+} */
+
 .top--header {
   margin-bottom: 12vh;
 }
@@ -65,7 +82,7 @@ hr {
   position: absolute;
   top: 25px;
   right: 3%;
-  /* background: red; */
+  background: red;
   transition: all 0.5s;
 }
 

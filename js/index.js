@@ -4,8 +4,10 @@ import * as slider from './slider.js';
 
 // Event handlers
 const container = document.querySelector('.container');
-const header = document.querySelector('.header');
-const topHeader = document.querySelector('.top--header');
+const header = document.querySelector('#header');
+// const header = document.querySelector('.header--page');
+const topHeader = document.querySelector('.overall-header');
+// const topHeader = document.querySelector('.top--header');
 
 // loader event handlers
 const loader = document.querySelector('.loader');
@@ -41,11 +43,13 @@ setTimeout(() => {
 const navHeight = topHeader.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
-
+  console.log(entry);
   if (!entry.isIntersecting) {
+    // header.classList.add('sticky');
     topHeader.classList.add('sticky');
     arrowUp.classList.remove('hidden');
   } else {
+    // header.classList.remove('sticky');
     topHeader.classList.remove('sticky');
     arrowUp.classList.add('hidden');
   }
