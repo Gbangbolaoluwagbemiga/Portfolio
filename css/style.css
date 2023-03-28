@@ -312,11 +312,16 @@ textarea {
   bottom: 5%;
 }
 
-/* .hidden {
-  visibility: hidden;
-  opacity: 0;
-} */
-
+.back-up {
+  position: fixed;
+  padding: 10px;
+  bottom: 3%;
+  right: 5%;
+  font-size: 25px;
+  z-index: 100;
+  /* border-radius: 100%;
+  border: 3px solid white; */
+}
 /* General styling */
 /* Lazy loading images */
 
