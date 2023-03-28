@@ -217,7 +217,7 @@ hr {
   top: 50%;
   left: 50%;
   width: 85vw;
-  height: 65vh;
+  height: 70vh;
   transform: translate(-50%, -50%);
   background-color: #f3f3f3;
   color: black;
@@ -286,7 +286,7 @@ textarea {
 #form-connect {
   margin: auto;
   margin-top: 10px;
-  width: 20vw;
+  width: 50vw;
   position: absolute;
   left: 10%;
   right: 10%;
@@ -414,6 +414,10 @@ img {
 
   textarea {
     margin: auto;
+    margin-top: 20px;
+  }
+  #form-connect {
+    bottom: 5%;
   }
 
   /* .header--links ul {

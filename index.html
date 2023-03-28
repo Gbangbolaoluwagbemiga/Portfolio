@@ -375,19 +375,27 @@
             <div class="form--spacing">
               <span class="name">
                 <label class="">Name:</label>
-                <input type="text" class="" />
+                <input type="text" class="" placeholder="" required />
               </span>
 
               <span class="email">
                 <label class="">Email:</label>
-                <input type="email" class="" />
+                <input type="email" class="" required />
               </span>
             </div>
 
-            <textarea name="message" id="contact" cols="40" rows="8"></textarea>
+            <textarea
+              name="message"
+              id="contact"
+              cols="40"
+              rows="8"
+              required
+              placeholder="Your message"
+            ></textarea>
             <input
               type="submit"
               value="connect"
+              required
               class="text-center form-connect"
               id="form-connect"
             />
