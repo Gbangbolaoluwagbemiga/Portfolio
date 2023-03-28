@@ -62,6 +62,10 @@ hr {
 }
 
 .header--links ul {
+  position: absolute;
+  top: 25px;
+  right: 3%;
+  /* background: red; */
   transition: all 0.5s;
 }
 

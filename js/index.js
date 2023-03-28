@@ -42,8 +42,13 @@ const navHeight = topHeader.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) topHeader.classList.add('sticky');
-  else topHeader.classList.remove('sticky');
+  if (!entry.isIntersecting) {
+    topHeader.classList.add('sticky');
+    arrowUp.classList.remove('hidden');
+  } else {
+    topHeader.classList.remove('sticky');
+    arrowUp.classList.add('hidden');
+  }
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {
@@ -52,7 +57,7 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-${navHeight}px`,
 });
 
-// headerObserver.observe(pretext);
+// headerObserver.observe(header);
 
 // Hamsburger functionality
 Hamsburg.handleViewportChange();
