@@ -322,8 +322,9 @@ textarea {
   z-index: 100;
 }
 
-.reservation {
-  width: 80%;
+#footer {
+  width: 90%;
+  text-align: center;
 }
 /* General styling */
 /* Lazy loading images */
@@ -446,6 +447,10 @@ img {
   textarea {
     margin: auto;
     margin-top: 20px;
+  }
+  .back-up {
+    right: 20%;
+    bottom: 0;
   }
 
   /* .header--links ul {
