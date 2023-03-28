@@ -325,8 +325,8 @@
       </section>
 
       <!-- contact me -->
-      <section class="contact sections my-5"></section>
-      <form
+      <section class="contact sections my-5">
+        <!-- <form
         method="post"
         action="https://formsubmit.co/gbangbolaphilip@gmail.com"
         class="mail-me"
@@ -338,18 +338,63 @@
         />
         <input type="hidden" name="_captcha" value="false" />
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          class="input-mail-details"
+        /><br />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          class="input-mail-details"
+        /><br />
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Your message"
+        ></textarea
+        ><br />
 
-        <input type="submit" value="Send" />
-      </form>
+        <input type="submit" value="Send" /> -->
+        <!-- </form> -->
 
+        <div class="contact-modal">
+          <button class="btn--close-modal">&times;</button>
+          <!-- <h2 class="modal__header">
+            Open your bank account <br />
+            in just <span class="highlight">5 minutes</span>
+          </h2> -->
+          <form class="modal__form">
+            <div class="form--spacing">
+              <span class="name">
+                <label class="">Name:</label>
+                <input type="text" class="" />
+              </span>
+
+              <span class="email">
+                <label class="">Email:</label>
+                <input type="email" class="" />
+              </span>
+            </div>
+
+            <textarea name="message" id="contact" cols="40" rows="8"></textarea>
+            <input
+              type="submit"
+              value="connect"
+              class="text-center form-connect"
+            />
+          </form>
+        </div>
+        <div class="overlay"></div>
+        <h2>Get in touch</h2>
+      </section>
       <!-- 
         <section id="socials">
                 <div class="social text-center">
