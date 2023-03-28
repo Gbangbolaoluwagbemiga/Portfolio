@@ -4,10 +4,10 @@ import * as slider from './slider.js';
 
 // Event handlers
 const container = document.querySelector('.container');
-const header = document.querySelector('#header');
-// const header = document.querySelector('.header--page');
-const topHeader = document.querySelector('.overall-header');
-// const topHeader = document.querySelector('.top--header');
+// const header = document.querySelector('#header');
+const header = document.querySelector('.header--page');
+// const topHeader = document.querySelector('.overall-header');
+const topHeader = document.querySelector('.top--header');
 
 // loader event handlers
 const loader = document.querySelector('.loader');
