@@ -4,15 +4,15 @@ import * as slider from './slider.js';
 
 // Event handlers
 const container = document.querySelector('.container');
-// const header = document.querySelector('#header');
-const header = document.querySelector('.header--page');
-// const topHeader = document.querySelector('.overall-header');
-const topHeader = document.querySelector('.top--header');
+const header = document.querySelector('.nav');
+// const header = document.querySelector('.header--page');
+const topHeader = document.querySelector('.overall-header');
+// const topHeader = document.querySelector('.top--header');
 
 // loader event handlers
 const loader = document.querySelector('.loader');
 const logo = document.querySelector('.logo');
-const subHeader = document.querySelector('.sub--header');
+const subHeader = document.querySelector('.sub-header');
 const pretext = document.querySelector('.pretext');
 
 // Implementation of the hamsburger
@@ -41,27 +41,28 @@ setTimeout(() => {
 
 // Sticky navigation: Intersection Observer API
 const navHeight = topHeader.getBoundingClientRect().height;
+
 const stickyNav = function (entries) {
   const [entry] = entries;
   console.log(entry);
   if (!entry.isIntersecting) {
     // header.classList.add('sticky');
-    topHeader.classList.add('sticky');
+    header.classList.add('sticky');
     arrowUp.classList.remove('hidden');
   } else {
     // header.classList.remove('sticky');
-    topHeader.classList.remove('sticky');
+    header.classList.remove('sticky');
     arrowUp.classList.add('hidden');
   }
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0,
+  threshold: 0.15,
   rootMargin: `-${navHeight}px`,
 });
 
-// headerObserver.observe(header);
+headerObserver.observe(topHeader);
 
 // Hamsburger functionality
 Hamsburg.handleViewportChange();
