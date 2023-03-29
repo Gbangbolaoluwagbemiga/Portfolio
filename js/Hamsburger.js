@@ -29,6 +29,7 @@ const hamsburg = function (hamsDisplay, cancelDisplay, listDisplay) {
 };
 
 export const displayLink = function (e) {
+  console.log('hmmmn');
   clicked = true;
   handleViewportChange();
   if (clicked) {
@@ -52,10 +53,12 @@ export function handleViewportChange() {
   const mediaQueryList = window.matchMedia('(max-width: 800px)');
   if (mediaQueryList.matches && clicked) {
     listItems.style.display = 'block';
+    console.log('hey');
   }
   if (!mediaQueryList) return (listItems.style.display = 'flex');
 
   if (mediaQueryList.matches) {
+    console.log('hi');
     reorderImg.classList.add('order-1');
     reorderText.classList.add('order-2');
   }
