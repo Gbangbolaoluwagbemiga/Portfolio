@@ -6,6 +6,7 @@ const container = document.querySelector('.container');
 const header = document.querySelector('.nav');
 // const header = document.querySelector('.header--page');
 const topHeader = document.querySelector('.overall-header');
+const secAbout = document.querySelector('.about');
 // const topHeader = document.querySelector('.top--header');
 
 // loader event handlers
@@ -45,20 +46,17 @@ const stickyNav = function (entries) {
   const [entry] = entries;
 
   if (!entry.isIntersecting) {
-    // header.classList.add('sticky');
     header.classList.add('sticky');
     arrowUp.classList.remove('hidden');
   } else {
-    // header.classList.remove('sticky');
     header.classList.remove('sticky');
     arrowUp.classList.add('hidden');
   }
 };
-
+console.log(secAbout);
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  // rootMargin: `-30px`,
   // rootMargin: `-${navHeight}px`,
 });
 
@@ -141,7 +139,7 @@ chooseView.addEventListener('click', function () {
     ? (chooseViewText.innerText = 'see more')
     : (chooseViewText.innerText = 'see less');
   if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
-    pretext.style.height = '110vh';
+    pretext.style.height = '120vh';
   } else {
     pretext.style.height = '100vh';
   }
