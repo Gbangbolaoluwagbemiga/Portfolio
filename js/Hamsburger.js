@@ -1,8 +1,6 @@
 export const hamsburgerIcon = document.querySelector('.ham--icon');
 export const cancelOpt = document.querySelector('.cancel--icon');
 const listItems = document.querySelector('.nav__links');
-const reorderText = document.querySelector('.reorder_text');
-const reorderImg = document.querySelector('.reorder_img');
 
 let clicked;
 

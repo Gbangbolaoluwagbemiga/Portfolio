@@ -64,20 +64,39 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(topHeader);
 
+//////////////////////////////////
+const mediaQueryList = window.matchMedia('(max-width: 800px)');
+const reorderText = document.querySelector('.reorder__text');
+const reorderImg = document.querySelector('.reorder__img');
+
+const reOrdering = function () {
+  if (mediaQueryList.matches) {
+    reorderImg.classList.add('order-1');
+    reorderText.classList.add('order-2');
+  }
+};
+reOrdering();
+
+let clicked;
+
 // Hamsburger functionality
 const hamsburgerIcon = document.querySelector('.ham-icon');
 const listItems = document.querySelector('.nav__links');
 hamsburgerIcon.addEventListener('click', function () {
-  listItems.style.display = 'block';
-  // console.log(hamsburgerIcon);
-  // console.log('hi');
+  if (mediaQueryList.matches) {
+    listItems.style.display = 'block';
+    console.log('hey');
+  }
+  if (!mediaQueryList) return (listItems.style.display = 'flex');
 });
+
 // Hamsburg.handleViewportChange();
 // // Hamsburger event handlers
 // Hamsburg.hamsburgerIcon.addEventListener('click', Hamsburg.displayLink);
 // // Dismissal: Hamsburger
 // Hamsburg.cancelOpt.addEventListener('click', Hamsburg.removeLink);
 
+//////////
 // Text animation
 const options = {
   strings: ['Oluwagbemiga', 'A Frontend Developer'],
