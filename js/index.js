@@ -65,13 +65,15 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(topHeader);
 
 //////////////////////////////////
-const mediaQueryList = window.matchMedia('(max-width: 800px)');
 const reorderText = document.querySelector('.reorder__text');
 const reorderImg = document.querySelector('.reorder__img');
 const hamsburgerIcon = document.querySelector('.ham-icon');
 const cancelIcon = document.querySelector('.cancel-icon');
 const listItems = document.querySelector('.nav__links');
 const listLink = document.querySelectorAll('.nav__link');
+
+// media query on a smaller screen
+const mediaQueryList = window.matchMedia('(max-width: 800px)');
 
 const reOrdering = function () {
   if (mediaQueryList.matches) {
@@ -138,10 +140,10 @@ chooseView.addEventListener('click', function () {
   readMoreText.classList.contains('hidden')
     ? (chooseViewText.innerText = 'see more')
     : (chooseViewText.innerText = 'see less');
-  if (!readMoreText.classList.contains('hidden')) {
+  if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
     pretext.style.height = '110vh';
   } else {
-    pretext.style.height = '90vh';
+    pretext.style.height = '100vh';
   }
 });
 
