@@ -13,7 +13,6 @@ const secAbout = document.querySelector('.about');
 const loader = document.querySelector('.loader');
 const logo = document.querySelector('.logo--name');
 const subHeader = document.querySelector('.sub-header');
-const pretext = document.querySelector('.overall-header');
 
 // Implementation of the hamsburger
 // container.addEventListener('click', Hamsburg.hamsburger);
@@ -53,11 +52,10 @@ const stickyNav = function (entries) {
     arrowUp.classList.add('hidden');
   }
 };
-console.log(secAbout);
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  // rootMargin: `-${navHeight}px`,
+  rootMargin: `-${navHeight}px`,
 });
 
 headerObserver.observe(topHeader);
@@ -139,9 +137,9 @@ chooseView.addEventListener('click', function () {
     ? (chooseViewText.innerText = 'see more')
     : (chooseViewText.innerText = 'see less');
   if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
-    pretext.style.height = '120vh';
+    subHeader.style.height = '95vh';
   } else {
-    pretext.style.height = '100vh';
+    subHeader.style.height = '75vh';
   }
 });
 
@@ -178,7 +176,6 @@ const skillContent = document.querySelectorAll('.skill--content');
 btnContainer.addEventListener('click', function (e) {
   const link = e.target.closest('.btn-skills');
   if (!link) return;
-  // console.log(link.dataset.tab);
 
   // Remove active classes
   btnSkills.forEach(t => t.classList.remove('active--btn--skills'));
