@@ -68,6 +68,9 @@ headerObserver.observe(topHeader);
 const mediaQueryList = window.matchMedia('(max-width: 800px)');
 const reorderText = document.querySelector('.reorder__text');
 const reorderImg = document.querySelector('.reorder__img');
+const hamsburgerIcon = document.querySelector('.ham-icon');
+const cancelIcon = document.querySelector('.cancel-icon');
+const listItems = document.querySelector('.nav__links');
 
 const reOrdering = function () {
   if (mediaQueryList.matches) {
@@ -80,14 +83,25 @@ reOrdering();
 let clicked;
 
 // Hamsburger functionality
-const hamsburgerIcon = document.querySelector('.ham-icon');
-const listItems = document.querySelector('.nav__links');
 hamsburgerIcon.addEventListener('click', function () {
-  if (mediaQueryList.matches) {
+  clicked = true;
+  if (mediaQueryList.matches && clicked) {
     listItems.style.display = 'block';
     console.log('hey');
   }
   if (!mediaQueryList) return (listItems.style.display = 'flex');
+
+  clicked = !clicked;
+  if (!clicked) {
+    hamsburgerIcon.style.display = 'none';
+    cancelIcon.style.display = 'block';
+  }
+});
+
+cancelIcon.addEventListener('click', function () {
+  listItems.style.display = 'none';
+  cancelIcon.style.display = 'none';
+  hamsburgerIcon.style.display = 'block';
 });
 
 // Hamsburg.handleViewportChange();
