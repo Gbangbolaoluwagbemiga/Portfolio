@@ -16,7 +16,7 @@ const subHeader = document.querySelector('.sub-header');
 const pretext = document.querySelector('.pretext');
 
 // Implementation of the hamsburger
-container.addEventListener('click', Hamsburg.hamsburger);
+// container.addEventListener('click', Hamsburg.hamsburger);
 
 // Loader implementation
 setTimeout(() => {
@@ -65,6 +65,13 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(topHeader);
 
 // Hamsburger functionality
+const hamsburgerIcon = document.querySelector('.ham-icon');
+const listItems = document.querySelector('.nav__links');
+hamsburgerIcon.addEventListener('click', function () {
+  listItems.style.display = 'block';
+  // console.log(hamsburgerIcon);
+  // console.log('hi');
+});
 // Hamsburg.handleViewportChange();
 // // Hamsburger event handlers
 // Hamsburg.hamsburgerIcon.addEventListener('click', Hamsburg.displayLink);

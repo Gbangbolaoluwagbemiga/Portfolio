@@ -167,7 +167,7 @@ hr {
   margin: 20px;
 }
 
-.ham--icon,
+.ham-icon,
 .cancel--icon {
   display: none;
 }
@@ -413,7 +413,7 @@ img {
     margin-top: 2rem;
   }
   .nav__links {
-    display: block;
+    display: none;
     height: 40vh;
     position: absolute;
     text-align: center;
@@ -466,9 +466,19 @@ img {
   .header--links ul li a {
     color: #01132d;
   } */
-  .ham--icon,
+  .hamsburger,
+  .theme {
+    position: absolute;
+    width: 20vw;
+    left: 70%;
+    top: 20px;
+  }
+  .theme {
+    left: 85%;
+  }
+  .ham-icon,
   .cancel--icon {
-    font-size: 4vw;
+    font-size: 5vw;
     display: block;
     /* position: absolute;
     left: 80%; */
