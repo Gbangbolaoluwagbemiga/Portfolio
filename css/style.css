@@ -48,7 +48,7 @@ hr {
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
-.top--header {
+.nav {
   animation-name: bounce;
   animation-duration: 2s;
   animation-fill-mode: forwards;
