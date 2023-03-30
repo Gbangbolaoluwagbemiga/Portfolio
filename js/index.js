@@ -1,5 +1,4 @@
 'use strict';
-import * as Hamsburg from './Hamsburger.js';
 import * as slider from './slider.js';
 
 // Event handlers
@@ -11,9 +10,9 @@ const topHeader = document.querySelector('.overall-header');
 
 // loader event handlers
 const loader = document.querySelector('.loader');
-const logo = document.querySelector('.logo');
+const logo = document.querySelector('.logo--name');
 const subHeader = document.querySelector('.sub-header');
-const pretext = document.querySelector('.pretext');
+const pretext = document.querySelector('.overall-header');
 
 // Implementation of the hamsburger
 // container.addEventListener('click', Hamsburg.hamsburger);
@@ -58,8 +57,9 @@ const stickyNav = function (entries) {
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0.15,
-  rootMargin: `-${navHeight}px`,
+  threshold: 0,
+  rootMargin: `-30px`,
+  // rootMargin: `-${navHeight}px`,
 });
 
 headerObserver.observe(topHeader);
@@ -71,6 +71,7 @@ const reorderImg = document.querySelector('.reorder__img');
 const hamsburgerIcon = document.querySelector('.ham-icon');
 const cancelIcon = document.querySelector('.cancel-icon');
 const listItems = document.querySelector('.nav__links');
+const listLink = document.querySelectorAll('.nav__link');
 
 const reOrdering = function () {
   if (mediaQueryList.matches) {
@@ -87,7 +88,6 @@ hamsburgerIcon.addEventListener('click', function () {
   clicked = true;
   if (mediaQueryList.matches && clicked) {
     listItems.style.display = 'block';
-    console.log('hey');
   }
   if (!mediaQueryList) return (listItems.style.display = 'flex');
 
@@ -98,19 +98,27 @@ hamsburgerIcon.addEventListener('click', function () {
   }
 });
 
-cancelIcon.addEventListener('click', function () {
+const closeLink = function () {
   listItems.style.display = 'none';
   cancelIcon.style.display = 'none';
   hamsburgerIcon.style.display = 'block';
+};
+container.addEventListener('click', function (e) {
+  const link = e.target;
+
+  if (listItems.style.display === 'block') {
+    if (
+      link.classList.contains('ham-icon') ||
+      link.classList.contains('cancel-icon')
+    )
+      return;
+    closeLink();
+  }
 });
+cancelIcon.addEventListener('click', closeLink);
+listLink.forEach(link => link.addEventListener('click', closeLink));
+// End of hamsburger functionality
 
-// Hamsburg.handleViewportChange();
-// // Hamsburger event handlers
-// Hamsburg.hamsburgerIcon.addEventListener('click', Hamsburg.displayLink);
-// // Dismissal: Hamsburger
-// Hamsburg.cancelOpt.addEventListener('click', Hamsburg.removeLink);
-
-//////////
 // Text animation
 const options = {
   strings: ['Oluwagbemiga', 'A Frontend Developer'],
@@ -130,6 +138,11 @@ chooseView.addEventListener('click', function () {
   readMoreText.classList.contains('hidden')
     ? (chooseViewText.innerText = 'see more')
     : (chooseViewText.innerText = 'see less');
+  if (!readMoreText.classList.contains('hidden')) {
+    pretext.style.height = '110vh';
+  } else {
+    pretext.style.height = '90vh';
+  }
 });
 
 // Lazy loading images

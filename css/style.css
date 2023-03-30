@@ -84,35 +84,6 @@ hr {
   transition: all 1s;
 }
 
-/* .top--header {
-  margin-bottom: 12vh;
-}
-.top--header.sticky {
-  background: red;
-  position: fixed;
-}
-
-.header--links ul {
-  position: absolute;
-  top: 25px;
-  right: 3%;
-  background: red;
-  transition: all 0.5s;
-}
-
-.header--links ul li {
-  list-style: none;
-  margin-inline: 30px;
-}
-.header--links ul li a {
-  color: #fff;
-  transition: all, 0.3s;
-}
-.header--links ul li:hover a {
-  text-decoration: none;
-  color: rgba(253, 189, 49);
-} */
-
 /* Header text */
 .sub-header {
   margin-top: 2.5rem;
@@ -396,6 +367,10 @@ img {
     font-size: 2.5vw;
     font-weight: 600;
   }
+  .overall-header {
+    height: 90vh;
+  }
+
   .top--header {
     margin-bottom: 7vh;
   }
@@ -426,12 +401,10 @@ img {
 
   .profile--pics img {
     border-radius: 80%;
-    /* border: 2px solid #ff851b; */
     border-spacing: 10px;
     height: 30vh;
     width: 70vw;
     padding: 10px;
-    /* margin: 5px; */
   }
 
   .dummy--pics {
@@ -449,23 +422,6 @@ img {
     margin-right: 0;
   }
 
-  /* .header--links ul {
-    display: none;
-    background: #fff;
-    width: 100vw;
-    height: 60vh;
-    position: relative;
-    top: 3vh;
-    right: 10vw;
-    z-index: 1;
-  }
-
-  .header--links ul li {
-    padding: 2rem 6rem;
-  }
-  .header--links ul li a {
-    color: #01132d;
-  } */
   .hamsburger,
   .theme {
     position: absolute;
