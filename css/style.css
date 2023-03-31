@@ -394,11 +394,9 @@ img {
     border-radius: 80%;
     height: 33vh;
     width: 65vw;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-bottom: 6rem;
-    margin-top: 0;
   }
 
   .dummy--pics {
