@@ -108,7 +108,7 @@ container.addEventListener('click', function (e) {
   }
 });
 cancelIcon.addEventListener('click', closeLink);
-listLink.forEach(link => link.addEventListener('click', closeLink));
+// listLink.forEach(link => link.addEventListener('click', closeLink));
 // End of hamsburger functionality
 
 // Text animation
@@ -130,10 +130,12 @@ chooseView.addEventListener('click', function () {
   readMoreText.classList.contains('hidden')
     ? (chooseViewText.innerText = 'see more')
     : (chooseViewText.innerText = 'see less');
-  if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
-    subHeader.style.height = '115vh';
-  } else {
-    subHeader.style.height = '90vh';
+  if (mediaQueryList.matches) {
+    if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
+      subHeader.style.height = '115vh';
+    } else {
+      subHeader.style.height = '90vh';
+    }
   }
 });
 
