@@ -4,18 +4,12 @@ import * as slider from './slider.js';
 // Event handlers
 const container = document.querySelector('.container');
 const header = document.querySelector('.nav');
-// const header = document.querySelector('.header--page');
 const topHeader = document.querySelector('.overall-header');
-const secAbout = document.querySelector('.about');
-// const topHeader = document.querySelector('.top--header');
 
 // loader event handlers
 const loader = document.querySelector('.loader');
 const logo = document.querySelector('.logo--name');
 const subHeader = document.querySelector('.sub-header');
-
-// Implementation of the hamsburger
-// container.addEventListener('click', Hamsburg.hamsburger);
 
 // Loader implementation
 setTimeout(() => {
@@ -137,7 +131,7 @@ chooseView.addEventListener('click', function () {
     ? (chooseViewText.innerText = 'see more')
     : (chooseViewText.innerText = 'see less');
   if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
-    subHeader.style.height = '110vh';
+    subHeader.style.height = '115vh';
   } else {
     subHeader.style.height = '90vh';
   }
