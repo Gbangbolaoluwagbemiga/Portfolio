@@ -137,9 +137,9 @@ chooseView.addEventListener('click', function () {
     ? (chooseViewText.innerText = 'see more')
     : (chooseViewText.innerText = 'see less');
   if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
-    subHeader.style.height = '95vh';
+    subHeader.style.height = '105vh';
   } else {
-    subHeader.style.height = '75vh';
+    subHeader.style.height = '85vh';
   }
 });
 
