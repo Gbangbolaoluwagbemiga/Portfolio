@@ -87,7 +87,7 @@ hr {
 /* Header text */
 .sub-header {
   margin-top: 2.5rem;
-  height: 85vh;
+  height: 80vh;
   opacity: 0;
 }
 .animated--text {
@@ -409,8 +409,8 @@ img {
     font-size: 5vw;
     letter-spacing: 2px;
   }
-  .sub--header {
-    height: 100vh;
+  .sub-header {
+    height: 90vh;
     margin: 3rem 0;
   }
   .pretext {
@@ -489,7 +489,6 @@ img {
     bottom: 0;
     font-size: 40px;
   }
-
   /* .header--links ul {
     display: flex;
     position: absolute;
