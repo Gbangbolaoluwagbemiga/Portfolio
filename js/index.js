@@ -10,7 +10,7 @@ const topHeader = document.querySelector('.overall-header');
 const loader = document.querySelector('.loader');
 const logo = document.querySelector('.logo--name');
 const subHeader = document.querySelector('.sub-header');
-const btns = document.querySelector('#btns');
+const btns = document.querySelectorAll('#btns');
 
 // Loader implementation
 setTimeout(() => {
@@ -34,12 +34,15 @@ moonIcon.addEventListener('click', toggleDarkMode);
 function toggleDarkMode() {
   container.classList.toggle('dark');
   if (dark) {
-    btns.style.background = 'black';
+    btns.forEach(btn => (btn.style.background = 'black'));
   } else {
-    btns.style.background = 'transparent';
-    btns.style.color = 'white';
+    btns.forEach(btn => {
+      btn.style.background = 'transparent';
+      btn.style.color = 'white';
+    });
   }
   dark = !dark;
+  // });
 }
 
 // Sticky navigation: Intersection Observer API
