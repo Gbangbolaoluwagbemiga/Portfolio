@@ -131,15 +131,11 @@ hr {
   cursor: pointer;
   transition: all 1s;
 }
-.nav__item:last-child a #btns:hover {
+a #btns:hover {
   background: #ff851b;
   border: 2px solid #ff851b;
 }
 
-.row a:nth-child(2) #btns:hover {
-  background: rgba(253, 189, 49);
-  border-color: rgba(253, 189, 49);
-}
 .profile--pics img {
   border-radius: 10%;
   position: relative;
