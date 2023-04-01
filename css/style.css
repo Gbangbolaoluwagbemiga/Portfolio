@@ -12,6 +12,8 @@ html {
   --cool-dark: #01132d;
   --cool-orange: rgba(253, 189, 49);
   --titles: #ff851b;
+  --white: #fff;
+  --black: #333;
 }
 body {
   width: 100%;
@@ -22,6 +24,11 @@ body {
   outline: none;
   font-family: 'Poppins', sans-serif;
 }
+.container {
+  background: #01132d;
+  color: #fff;
+  transition: all 1s;
+}
 hr {
   border: none;
   height: 2px;
@@ -30,7 +37,11 @@ hr {
 .hidden {
   display: none;
 }
-
+.container.dark {
+  background: white;
+  color: #333;
+  transition: all 1s;
+}
 .sub--header,
 .top--header {
   opacity: 0;
@@ -75,7 +86,7 @@ hr {
   margin-left: 1.5rem;
 }
 .nav.sticky {
-  background: white;
+  background: #14213d;
   color: black;
   position: fixed;
   top: 0;
@@ -372,7 +383,7 @@ img {
     margin-bottom: 7vh;
   }
   #btns {
-    width: 90%;
+    width: 100%;
   }
   .nav {
     width: 100%;
@@ -392,8 +403,8 @@ img {
 
   .profile--pics img {
     border-radius: 80%;
-    height: 33vh;
-    width: 65vw;
+    height: 35vh;
+    width: 70vw;
     top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);

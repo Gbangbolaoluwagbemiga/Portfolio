@@ -10,6 +10,7 @@ const topHeader = document.querySelector('.overall-header');
 const loader = document.querySelector('.loader');
 const logo = document.querySelector('.logo--name');
 const subHeader = document.querySelector('.sub-header');
+const btns = document.querySelector('#btns');
 
 // Loader implementation
 setTimeout(() => {
@@ -25,12 +26,21 @@ setTimeout(() => {
   subHeader.style.opacity = 1;
 }, 7100);
 
-//  faking the delay
-// setTimeout(() => {
-//   subHeader.style.opacity = 1;
-// }, 2100);
+// Dark theme
+let dark = true;
+const moonIcon = document.querySelector('.icon-moon');
+moonIcon.addEventListener('click', toggleDarkMode);
 
-//  Helper functions
+function toggleDarkMode() {
+  container.classList.toggle('dark');
+  if (dark) {
+    btns.style.background = 'black';
+  } else {
+    btns.style.background = 'transparent';
+    btns.style.color = 'white';
+  }
+  dark = !dark;
+}
 
 // Sticky navigation: Intersection Observer API
 const navHeight = topHeader.getBoundingClientRect().height;
