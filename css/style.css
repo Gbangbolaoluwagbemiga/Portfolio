@@ -42,16 +42,14 @@ hr {
   color: #333;
   transition: all 1s;
 }
-.sub--header,
-.top--header {
+.sub-header,
+.top-header {
   opacity: 0;
   /* faking it */
   /* opacity: 1; */
 }
 .logo {
   display: none;
-  /* faking it */
-  /* display: inline-block; */
 }
 .text {
   animation-name: fadeInLeft;
