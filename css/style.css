@@ -45,8 +45,6 @@ hr {
 .sub-header,
 .top-header {
   opacity: 0;
-  /* faking it */
-  /* opacity: 1; */
 }
 .logo {
   display: none;
@@ -96,7 +94,7 @@ hr {
 /* Header text */
 .sub-header {
   margin-top: 2.5rem;
-  height: 70vh;
+  height: 77vh;
   opacity: 0;
 }
 .animated--text {
