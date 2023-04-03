@@ -29,6 +29,9 @@ body {
   transition: all 1s;
   overflow: hidden;
 }
+a:link {
+  text-decoration: none;
+}
 hr {
   border: none;
   height: 2px;
@@ -163,6 +166,13 @@ a #btns:hover {
   width: 80%;
 }
 
+/* card */
+.card {
+  width: auto;
+  margin: 4rem 0;
+  color: black;
+}
+
 /* section 3 skills acquired */
 .skills-acquired {
   width: 10vw;
@@ -254,75 +264,6 @@ a #btns:hover {
   transition: all 0.5s;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  z-index: 100;
-  transition: all 0.5s;
-}
-
-.modal__form label {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.modal__form input {
-  font-size: 1.25rem;
-  padding: 10px;
-  margin: 10px;
-  width: 80%;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  transition: all 2s;
-  box-shadow: none;
-  outline: none;
-}
-.modal__form input:focus,
-textarea:focus {
-  width: 90%;
-  box-shadow: 2px rgba(253, 189, 49);
-}
-
-.btn--close-modal {
-  font-family: inherit;
-  color: inherit;
-  position: absolute;
-  top: 0;
-  right: 2rem;
-  font-size: 3rem;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-.btn--close-modal:hover {
-  border: none;
-}
-textarea {
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  display: block;
-  width: 80%;
-  height: 60%;
-  margin: 10px;
-  padding: 10px;
-  outline: none;
-  box-shadow: none;
-}
-#form-connect {
-  margin: auto;
-  margin-top: 10px;
-  width: 50vw;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  background: red;
-  bottom: 5%;
-}
 .social-icon {
   font-size: 3.5rem;
   padding: 1.5rem;
@@ -417,7 +358,7 @@ img {
   .sections {
     width: 95%;
     margin: 3px;
-    padding: 5px;
+    padding: 3px;
   }
 
   .sub-header {
@@ -499,6 +440,9 @@ img {
     right: 20%;
     bottom: 0;
     font-size: 40px;
+  }
+  .card {
+    margin: 0 1.75rem;
   }
   /* .header--links ul {
     display: flex;
