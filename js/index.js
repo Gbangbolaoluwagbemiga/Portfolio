@@ -29,16 +29,19 @@ setTimeout(() => {
 // Dark theme
 let dark = true;
 const moonIcon = document.querySelector('.icon-moon');
+const sendMailBtn = document.querySelector('.send-mail');
 moonIcon.addEventListener('click', toggleDarkMode);
 
 function toggleDarkMode() {
   container.classList.toggle('dark');
   if (dark) {
     btns.forEach(btn => (btn.style.background = 'black'));
+    sendMailBtn.style.background = 'black';
   } else {
     btns.forEach(btn => {
       btn.style.background = 'transparent';
       btn.style.color = 'white';
+      sendMailBtn.style.background = 'transparent';
     });
   }
   dark = !dark;
