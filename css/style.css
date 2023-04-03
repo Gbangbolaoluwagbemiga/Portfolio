@@ -16,7 +16,6 @@ html {
   --black: #333;
 }
 body {
-  width: 100%;
   min-height: 100vh;
   background: #01132d;
   color: #fff;
@@ -25,9 +24,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 .container {
+  width: 100%;
   background: #01132d;
   color: #fff;
   transition: all 1s;
+  overflow: hidden;
 }
 hr {
   border: none;
@@ -123,7 +124,7 @@ hr {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
-  border-radius: 5px;
+  border-radius: 30px 50px 30px 50px;
   cursor: pointer;
   transition: all 1s;
 }
@@ -401,15 +402,25 @@ img {
     left: 45%;
     transform: translate(-50%, -50%);
   }
+  .animated--text {
+    width: 95%;
+    margin-bottom: 15px;
+  }
 
   .dummy--pics {
-    width: 90vw;
+    width: 85vw;
     height: 40vh;
   }
   .text h1 {
     font-size: 5vw;
     letter-spacing: 2px;
   }
+  .sections {
+    width: 95%;
+    margin: 3px;
+    padding: 5px;
+  }
+
   .sub-header {
     height: 90vh;
     margin: 3rem 0;
