@@ -24,7 +24,7 @@ setTimeout(() => {
 
 setTimeout(() => {
   subHeader.style.opacity = 1;
-}, 7100);
+}, 7200);
 
 // Dark theme
 let dark = true;

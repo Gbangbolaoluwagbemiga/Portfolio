@@ -16,7 +16,6 @@ html {
   --black: #333;
 }
 body {
-  min-height: 100vh;
   background: #01132d;
   color: #fff;
   text-decoration: none;
@@ -124,7 +123,7 @@ hr {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
-  border-radius: 70px 20px 70px 20px;
+  border-radius: 80px 10px 80px 20px;
   cursor: pointer;
   transition: all 1s;
 }
