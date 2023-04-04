@@ -49,6 +49,7 @@ function toggleDarkMode() {
 }
 
 // Sticky navigation: Intersection Observer API
+const arrowUp = document.querySelector('.back-up');
 const navHeight = topHeader.getBoundingClientRect().height;
 
 const stickyNav = function (entries) {
@@ -226,5 +227,3 @@ allSections.forEach(function (section) {
 
 // project slider
 slider.slideProjects();
-
-const arrowUp = document.querySelector('.back-up');
