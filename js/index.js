@@ -1,5 +1,4 @@
 'use strict';
-import * as slider from './slider.js';
 
 // Event handlers
 const container = document.querySelector('.container');
@@ -224,6 +223,3 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
-
-// project slider
-slider.slideProjects();

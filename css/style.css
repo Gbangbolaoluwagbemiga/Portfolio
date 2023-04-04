@@ -400,6 +400,9 @@ img {
   .cancel-icon {
     display: none;
   }
+  .skill-icon-text {
+    margin: 1.75rem 0;
+  }
 
   .skills-acquired {
     width: 20vw;
