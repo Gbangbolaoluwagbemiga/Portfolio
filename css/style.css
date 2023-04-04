@@ -146,7 +146,6 @@ a #btns:hover {
   border-radius: 10%;
   position: relative;
   width: 80%;
-  height: 63vh;
   text-align: center;
   margin-top: 20px;
 }
@@ -426,6 +425,10 @@ img {
   .logo {
     font-size: 4vw;
     font-weight: 700;
+  }
+  .profile--pics img {
+    height: 60vh;
+    margin: 2rem 0;
   }
 
   .header--links ul {
