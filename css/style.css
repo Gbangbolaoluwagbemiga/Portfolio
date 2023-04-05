@@ -176,7 +176,7 @@ a #btns:hover {
 .card {
   width: auto;
   margin: 4rem 0;
-  color: black;
+  background: transparent;
 }
 
 /* section 3 skills acquired */
