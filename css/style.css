@@ -35,13 +35,13 @@ a:link {
 hr {
   border: none;
   height: 2px;
-  background-color: #ddd;
+  background-color: var(--white);
 }
 .hidden {
   display: none;
 }
 .container.dark {
-  background: white;
+  background: var(--white);
   color: var(--black);
   transition: all 1s;
 }
