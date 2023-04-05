@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ html {
   --black: #333;
 }
 body {
-  background: #01132d;
+  background: var(--cool-dark);
   color: #fff;
   text-decoration: none;
   outline: none;
@@ -24,7 +24,7 @@ body {
 }
 .container {
   width: 100%;
-  background: #01132d;
+  background: var(--cool-dark);
   color: #fff;
   transition: all 1s;
   overflow: hidden;
@@ -177,6 +177,12 @@ a #btns:hover {
   width: auto;
   margin: 4rem 0;
   background: transparent;
+}
+.code--link {
+  background: var(--cool-orange);
+  color: var(--white);
+  border-radius: 15px;
+  padding: 15px;
 }
 
 /* section 3 skills acquired */
@@ -414,21 +420,6 @@ img {
     margin: 2rem 0;
   }
 
-  .header--links ul {
-    display: flex;
-    font-size: 1.5vw;
-  }
-
-  .form--spacing {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  textarea {
-    margin: auto;
-    margin-top: 20px;
-  }
   .back-up {
     right: 20%;
     bottom: 0;
