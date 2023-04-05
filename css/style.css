@@ -17,7 +17,7 @@ html {
 }
 body {
   background: var(--cool-dark);
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   outline: none;
   font-family: 'Lato', sans-serif;
@@ -25,7 +25,7 @@ body {
 .container {
   width: 100%;
   background: var(--cool-dark);
-  color: #fff;
+  color: var(--white);
   transition: all 1s;
   overflow: hidden;
 }
@@ -42,7 +42,7 @@ hr {
 }
 .container.dark {
   background: white;
-  color: #333;
+  color: var(--black);
   transition: all 1s;
 }
 .sub-header,
@@ -131,15 +131,15 @@ hr {
   padding: 5px;
   font-size: 16px;
   background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--white);
+  color: var(--white);
   cursor: pointer;
   border-radius: 80px 10px 80px 20px;
   transition: all 1s;
 }
 a #btns:hover {
-  background: #ff851b;
-  border: 2px solid #ff851b;
+  background: var(--titles);
+  border: 2px solid var(--titles);
 }
 
 .profile--pics img {
@@ -157,7 +157,7 @@ a #btns:hover {
 /* section pretext show text */
 .choose--view {
   cursor: pointer;
-  color: rgba(253, 189, 49);
+  color: var(--cool-orange);
   text-decoration: underline;
 }
 
@@ -198,7 +198,7 @@ a #btns:hover {
 .technical--heading,
 .about__heading {
   text-align: center;
-  color: #ff851b;
+  color: var(--titles);
 }
 
 .skill--content {
@@ -211,8 +211,8 @@ a #btns:hover {
   transition: all 0.5s;
 }
 .active--btn--skills {
-  background-color: rgba(253, 189, 49);
-  border: 2px solid rgba(253, 189, 49);
+  background-color: var(--cool-orange);
+  border: 2px solid var(--cool-orange);
   transition: all 0.5s;
 }
 /* section 3 special */
@@ -226,8 +226,8 @@ a #btns:hover {
   left: 0;
   right: 0;
   padding: 10px;
-  background-color: rgba(253, 189, 49);
-  color: #fff;
+  background-color: var(--cool-orange);
+  color: var(--white);
   font-size: 16px;
   text-align: center;
   border-radius: 10px;
