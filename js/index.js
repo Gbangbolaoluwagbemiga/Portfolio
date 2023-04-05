@@ -10,6 +10,7 @@ const loader = document.querySelector('.loader');
 const logo = document.querySelector('.logo--name');
 const subHeader = document.querySelector('.sub-header');
 const btns = document.querySelectorAll('#btns');
+const headerLinks = document.querySelectorAll('.nav__link');
 
 // Loader implementation
 setTimeout(() => {
@@ -35,6 +36,7 @@ function toggleDarkMode() {
   container.classList.toggle('dark');
   if (dark) {
     btns.forEach(btn => (btn.style.background = 'black'));
+    headerLinks.forEach(hl => (hl.style.color = 'black'));
     sendMailBtn.style.background = 'black';
   } else {
     btns.forEach(btn => {
@@ -42,6 +44,7 @@ function toggleDarkMode() {
       btn.style.color = 'white';
       sendMailBtn.style.background = 'transparent';
     });
+    headerLinks.forEach(hl => (hl.style.color = 'white'));
   }
   dark = !dark;
   // });

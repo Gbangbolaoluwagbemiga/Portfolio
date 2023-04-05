@@ -69,7 +69,7 @@ hr {
   width: 100%;
   margin: 0.75rem;
 }
-.nav a:link {
+.nav .nav__link {
   color: white;
 }
 .hamsburger,
@@ -131,10 +131,10 @@ hr {
   padding: 5px;
   font-size: 16px;
   background: transparent;
-  color: #fff;
   border: 2px solid #fff;
-  border-radius: 80px 10px 80px 20px;
+  color: #fff;
   cursor: pointer;
+  border-radius: 80px 10px 80px 20px;
   transition: all 1s;
 }
 a #btns:hover {
@@ -234,6 +234,9 @@ a #btns:hover {
   transform: rotateX(90deg);
   transition: transform 0.5s;
   transform-origin: bottom;
+}
+.skill-icon-text {
+  margin: 1.75rem 0;
 }
 
 .skill-icon-text:hover img {
@@ -389,9 +392,6 @@ img {
   }
   .cancel-icon {
     display: none;
-  }
-  .skill-icon-text {
-    margin: 1.75rem 0;
   }
 
   .skills-acquired {
