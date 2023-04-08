@@ -143,11 +143,18 @@ a #btns:hover {
 }
 
 .profile--pics img {
-  border-radius: 10%;
   position: relative;
-  width: 80%;
+  border-radius: 80%;
   text-align: center;
+  height: 30vh;
+  width: 70%;
   margin-top: 20px;
+  /* border: 7px solid #192430; */
+
+  /* width: 65%;
+  height: auto;
+  border-radius: 70%;
+  */
 }
 
 .ham-icon,
