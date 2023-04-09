@@ -184,7 +184,12 @@ a #btns:hover {
   background: var(--cool-orange);
   color: var(--white);
   border-radius: 15px;
+  border: 2px solid var(--cool-orange);
   padding: 15px;
+}
+.code--link:hover {
+  background: transparent;
+  border: 2px solid transparent;
 }
 
 /* section 3 skills acquired */
