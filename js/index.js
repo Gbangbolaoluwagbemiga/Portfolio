@@ -106,7 +106,7 @@ const listItems = document.querySelector('.nav__links');
 const listLink = document.querySelectorAll('.nav__link');
 
 // media query on a smaller screen
-const mediaQueryList = window.matchMedia('(max-width: 800px)');
+const mediaQueryList = window.matchMedia('(max-width: 765px)');
 
 const reOrdering = function () {
   if (mediaQueryList.matches) {

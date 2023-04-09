@@ -312,7 +312,7 @@ img {
 /* General styling ends */
 
 /* smaller screen responsiveness */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 765px) {
   .logo {
     font-size: 2.5vw;
     font-weight: 600;
@@ -342,8 +342,8 @@ img {
 
   .profile--pics img {
     border-radius: 80%;
-    height: 30vh;
-    width: 70vw;
+    height: 40vh;
+    width: 60%;
     top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);
@@ -414,7 +414,7 @@ img {
 }
 
 /* larger screen responsiveness */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 765px) {
   /* Header responsiveness */
 
   .logo {
