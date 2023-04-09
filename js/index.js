@@ -58,7 +58,12 @@ const handleHover = function (e) {
     const logo = link.closest('.nav').querySelector('img');
 
     siblings.forEach(el => {
-      if (el !== link) el.style.opacity = this;
+      if (el !== link) {
+        el.style.opacity = this;
+      }
+      // else {
+      //   el.style.color = 'rgba(253, 189, 49)';
+      // }
     });
     logo.style.opacity = this;
   }
