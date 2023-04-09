@@ -58,29 +58,31 @@
     <div class="container hidden">
       <!--hidden-->
 
-      <header id="header" class="overall-header">
-        <nav class="nav row animate__bounce justify-content-between">
+      <header id="header" class="overall-header my-4">
+        <nav class="nav row animate__bounce mb-5">
           <!-- Logo -->
-          <p class="col-md-3 logo--name">Oluwagbemiga</p>
+          <p class="h4 fw-bold col-md-3 logo--name text-sm-left">
+            Oluwagbemiga
+          </p>
 
           <!-- Hamsburger -->
-          <div class="col-md-2 hamsburger">
+          <div class="col-md-3 hamsburger">
             <i class="fa-solid fa-bars-staggered ham-icon"></i>
             <i class="fa-regular fa-circle-xmark cancel-icon"></i>
           </div>
 
           <!-- Links -->
-          <ul class="nav__links col-md-5">
-            <li class="nav__item">
+          <ul class="nav__links ml-md-5 col-md-4">
+            <li class="nav__item ml-md-4">
               <a class="nav__link" href="#section--about">About</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item ml-md-4">
               <a class="nav__link" href="#section--projects">Projects</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item ml-md-4">
               <a class="nav__link" href="#section--contact">Contact</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item ml-md-4">
               <a href="/img/resume.pdf" class="nav__link" download>
                 <button id="btns" class="px-4">Resume</button>
               </a>
@@ -88,15 +90,17 @@
           </ul>
 
           <!-- Theme -->
-          <div class="theme col-md-2">
-            <i class="fa-solid fa-moon icon-moon"></i>
+          <div class="theme col-md-1 ml-md-4">
+            <i class="fa-solid fa-moon icon-moon pl-md-5"></i>
           </div>
         </nav>
 
         <!-- Header pretext -->
         <div class="row sub-header">
           <!-- Intro text -->
-          <div class="col-md-7 animate__fadeInLeft text reorder__text">
+          <div
+            class="col-md-7 mt-md-5 pt-md-3 animate__fadeInLeft text reorder__text"
+          >
             <h1 class="animated--text">Hi. I'm <span class="typing"></span></h1>
             <p class="pretext">
               I am thrilled to showcase my skills and experience in the world of
@@ -118,7 +122,7 @@
               ><i class="fa-solid fa-arrow-down down--arrow"></i>
             </p>
 
-            <div class="row">
+            <div class="row mt-3">
               <a href="#section--contact" class="col-7">
                 <button id="btns">
                   Contact <i class="fa-brands fa-telegram"></i>
@@ -133,7 +137,7 @@
           >
             <img
               data-src="img/profile.jpg"
-              class="profile--pics lazy-img"
+              class="profile--pics lazy-img ml-md-3"
               alt="profile pics"
             />
           </div>
@@ -144,17 +148,17 @@
       <section class="about sections" id="section--about">
         <h1 class="about__heading my-5 text-center">ABOUT ME</h1>
 
-        <div class="row">
-          <div class="col-md-6 align-items-center">
+        <div class="row justify-content-around">
+          <div class="col-md-6">
             <img
               src="/img/about-us.png"
               data-src="img/about-us.png"
-              class="dummy--pics lazy-img img-fluid"
+              class="dummy--pics lazy-img img-fluid text-center"
               alt="dummy pics"
             />
           </div>
 
-          <div class="col-md-6 mt-5">
+          <div class="col-md-5 mt-5">
             <p class="info--me">
               I'm Oluwagbemiga Gbangbola(I prefer to be called "Oluwagbemiga" in
               full), an hydrology Student transitioning into Web development.
@@ -253,7 +257,7 @@
               </p>
             </div>
           </div>
-       
+        </div>
       </section>
 
       <!-- projects (card implementation) -->
