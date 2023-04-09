@@ -2,6 +2,7 @@
 
 // Event handlers
 const container = document.querySelector('.container');
+const containerBody = document.querySelector('body');
 const header = document.querySelector('.nav');
 const topHeader = document.querySelector('.overall-header');
 
@@ -38,11 +39,13 @@ function toggleDarkMode() {
     btns.forEach(btn => (btn.style.background = 'black'));
     headerLinks.forEach(hl => (hl.style.color = 'black'));
     sendMailBtn.style.background = 'black';
+    containerBody.style.background = 'white';
   } else {
     btns.forEach(btn => {
       btn.style.background = 'transparent';
       btn.style.color = 'white';
       sendMailBtn.style.background = 'transparent';
+      containerBody.style.background = '#01132d';
     });
     headerLinks.forEach(hl => (hl.style.color = 'white'));
   }

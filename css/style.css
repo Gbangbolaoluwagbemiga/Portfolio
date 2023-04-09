@@ -26,7 +26,7 @@ body {
   width: 100%;
   background: var(--cool-dark);
   color: var(--white);
-  transition: all 1s;
+  transition: all 0.2s;
   overflow: hidden;
 }
 a:link {
