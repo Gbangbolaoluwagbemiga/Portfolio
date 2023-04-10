@@ -107,7 +107,7 @@ hr {
 /* Header text */
 .sub-header {
   margin-top: 2.5rem;
-  height: 77vh;
+  height: 30rem;
   opacity: 0;
 }
 .animated--text {
@@ -372,6 +372,7 @@ img {
 
   .sub-header {
     margin: 3rem 0;
+    height: 77vh;
   }
   .pretext {
     margin-right: 0;
