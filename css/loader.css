@@ -79,11 +79,18 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 765px) {
   .loader--text {
     font-size: 5vw;
   }
   .hexagon {
     width: 18vw;
+  }
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #01132d;
   }
 }
