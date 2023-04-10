@@ -38,8 +38,8 @@
   width: 10vw;
   height: 55px;
   position: relative;
+  margin: 50% 0;
   background-color: #6c5ce7;
-  margin: auto 0;
   opacity: 0;
   animation: fade-in 3s ease-in-out forwards;
 }
