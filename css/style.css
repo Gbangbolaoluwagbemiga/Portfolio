@@ -238,7 +238,7 @@ a #btns:hover {
   padding: 10px;
   background-color: var(--cool-orange);
   color: var(--white);
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   border-radius: 10px;
   transform: rotateX(90deg);
@@ -430,6 +430,9 @@ img {
   .profile--pics img {
     height: 25rem;
     margin: 2rem 0;
+  }
+  .skill-name {
+    width: 60%;
   }
 
   .back-up {
