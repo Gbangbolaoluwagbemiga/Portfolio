@@ -383,7 +383,7 @@ img {
     position: absolute;
     width: 20vw;
     left: 70%;
-    transition: all 1.2s;
+    transition: all 1s;
   }
   .logo--name,
   .hamsburger,
