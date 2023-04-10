@@ -412,7 +412,8 @@ img {
   }
 
   .social-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding: 1.25rem;
   }
 }
 
