@@ -180,6 +180,13 @@ chooseView.addEventListener('click', function () {
       subHeader.style.height = '77vh';
     }
   }
+  if (!mediaQueryList.matches) {
+    if (!readMoreText.classList.contains('hidden') && !mediaQueryList.matches) {
+      subHeader.style.height = '32rem';
+    } else {
+      subHeader.style.height = '30rem';
+    }
+  }
 });
 
 // Lazy loading images
