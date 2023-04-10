@@ -3,6 +3,7 @@
 // Event handlers
 const container = document.querySelector('.container');
 const containerBody = document.querySelector('body');
+const hrLine = document.querySelector('hr');
 const header = document.querySelector('.nav');
 const topHeader = document.querySelector('.overall-header');
 
@@ -40,12 +41,14 @@ function toggleDarkMode() {
     headerLinks.forEach(hl => (hl.style.color = 'black'));
     sendMailBtn.style.background = 'black';
     containerBody.style.background = 'white';
+    hrLine.style.background = 'black';
   } else {
     btns.forEach(btn => {
       btn.style.background = 'transparent';
       btn.style.color = 'white';
       sendMailBtn.style.background = 'transparent';
       containerBody.style.background = '#01132d';
+      hrLine.style.background = '#01132d';
     });
     headerLinks.forEach(hl => (hl.style.color = 'white'));
   }
@@ -64,9 +67,6 @@ const handleHover = function (e) {
       if (el !== link) {
         el.style.opacity = this;
       }
-      // else {
-      //   el.style.color = 'rgba(253, 189, 49)';
-      // }
     });
     logo.style.opacity = this;
   }
