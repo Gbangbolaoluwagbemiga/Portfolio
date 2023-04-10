@@ -183,16 +183,16 @@ a #btns:hover {
   background: transparent;
 }
 .code--link {
-  background: var(--cool-orange);
-  color: var(--white);
-  border-radius: 15px;
-  border: 2px solid var(--cool-orange);
-  padding: 15px;
-}
-.code--link:hover {
   background: transparent;
   border: 2px solid transparent;
   color: var(--cool-orange);
+}
+.code--link:hover {
+  background: var(--cool-orange);
+  color: var(--white);
+  border: 2px solid var(--cool-orange);
+  border-radius: 15px;
+  padding: 15px;
 }
 
 /* section 3 skills acquired */
