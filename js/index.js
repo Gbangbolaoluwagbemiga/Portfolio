@@ -182,7 +182,7 @@ chooseView.addEventListener('click', function () {
   }
   if (!mediaQueryList.matches) {
     if (!readMoreText.classList.contains('hidden') && !mediaQueryList.matches) {
-      subHeader.style.height = '32rem';
+      subHeader.style.height = '33rem';
     } else {
       subHeader.style.height = '30rem';
     }

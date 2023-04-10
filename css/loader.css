@@ -39,7 +39,7 @@
   height: 55px;
   position: relative;
   background-color: #6c5ce7;
-  margin: 27.5px 0;
+  margin: auto 0;
   opacity: 0;
   animation: fade-in 3s ease-in-out forwards;
 }
