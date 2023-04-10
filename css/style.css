@@ -168,7 +168,6 @@ a #btns:hover {
   display: block;
   width: 100%;
   text-align: center;
-  margin: 5px 20px;
 }
 .dummy--pics {
   width: 80%;
@@ -190,6 +189,7 @@ a #btns:hover {
 .code--link:hover {
   background: transparent;
   border: 2px solid transparent;
+  color: var(--cool-orange);
 }
 
 /* section 3 skills acquired */
@@ -271,7 +271,7 @@ a #btns:hover {
 }
 
 .social-icon {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   padding: 1.5rem;
   margin: auto;
 }
@@ -342,8 +342,8 @@ img {
 
   .profile--pics img {
     border-radius: 80%;
-    height: 40vh;
-    width: 60%;
+    height: 35vh;
+    width: 65%;
     top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);
@@ -409,7 +409,7 @@ img {
   }
 
   .social-icon {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 
