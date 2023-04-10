@@ -345,8 +345,8 @@ img {
 
   .profile--pics img {
     border-radius: 80%;
-    height: 35vh;
-    width: 65%;
+    height: 30vh;
+    width: 70%;
     top: 40%;
     left: 45%;
     transform: translate(-50%, -50%);
@@ -426,7 +426,7 @@ img {
     font-weight: 700;
   }
   .profile--pics img {
-    height: 60vh;
+    height: 20rem;
     margin: 2rem 0;
   }
 
