@@ -278,6 +278,12 @@ a #btns:hover {
   padding: 1.5rem;
   margin: auto;
 }
+/* project sections */
+.tech-stack {
+  background-color: var(--cool-orange);
+  border: 2px solid var(--cool-orange);
+  border-radius: 20px;
+}
 
 /* footer */
 .back-up {
