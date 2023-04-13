@@ -283,6 +283,7 @@ a #btns:hover {
   background-color: var(--cool-orange);
   border: 2px solid var(--cool-orange);
   border-radius: 20px;
+  font-size: 13px;
 }
 
 /* footer */
