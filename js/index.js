@@ -13,6 +13,7 @@ const logo = document.querySelector('.logo--name');
 const subHeader = document.querySelector('.sub-header');
 const btns = document.querySelectorAll('#btns');
 const headerLinks = document.querySelectorAll('.nav__link');
+const techStack = document.querySelector('.technical--skills');
 
 // Loader implementation
 setTimeout(() => {
@@ -33,23 +34,27 @@ let dark = true;
 const moonIcon = document.querySelector('.icon-moon');
 const sendMailBtn = document.querySelector('.send-mail');
 moonIcon.addEventListener('click', toggleDarkMode);
+const stickyTopNav = document.querySelector('.nav--sticky');
+// console.log(stickyTopNav);
+
+function darkProps(col, col2, col3, col4) {
+  btns.forEach(btn => (btn.style.background = col));
+  sendMailBtn.style.background = col2;
+  containerBody.style.background = col3;
+  hrLine.style.background = col4;
+}
 
 function toggleDarkMode() {
   container.classList.toggle('dark');
   if (dark) {
-    btns.forEach(btn => (btn.style.background = 'black'));
     headerLinks.forEach(hl => (hl.style.color = 'black'));
-    sendMailBtn.style.background = 'black';
-    containerBody.style.background = 'white';
-    hrLine.style.background = 'black';
+    darkProps('black', 'black', 'white', 'black');
   } else {
     btns.forEach(btn => {
-      btn.style.background = 'transparent';
       btn.style.color = 'white';
-      sendMailBtn.style.background = 'transparent';
-      containerBody.style.background = '#01132d';
-      hrLine.style.background = '#01132d';
     });
+
+    darkProps('transparent', 'transparent', '#01132d', '#01132d');
     headerLinks.forEach(hl => (hl.style.color = 'white'));
   }
   dark = !dark;
@@ -84,7 +89,13 @@ const stickyNav = function (entries) {
   if (!entry.isIntersecting) {
     header.classList.add('sticky');
     arrowUp.classList.remove('hidden');
+    if (header.classList.contains('sticky')) {
+      !dark
+        ? (header.style.background = 'rgba(255, 255, 255, 1.0)')
+        : (header.style.background = '#14213d');
+    }
   } else {
+    header.style.background = 'none';
     header.classList.remove('sticky');
     arrowUp.classList.add('hidden');
   }
@@ -219,6 +230,10 @@ imgTargets.forEach(img => imgObserver.observe(img));
 const allSections = document.querySelectorAll('.sections');
 
 const revealSection = function (entries, observer) {
+  // Removal of tech stack section on desktop view
+  if (mediaQueryList.matches) {
+    techStack.classList.remove('sections');
+  }
   const [entry] = entries;
 
   if (!entry.isIntersecting) return;

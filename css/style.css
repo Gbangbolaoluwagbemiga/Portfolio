@@ -94,9 +94,9 @@ hr {
   margin-left: 1.5rem;
 }
 .nav.sticky {
-  background: #14213d;
+  /* background: #14213d; */
   margin: auto;
-  color: black;
+  color: var(white);
   position: fixed;
   top: 0;
   left: 0;
