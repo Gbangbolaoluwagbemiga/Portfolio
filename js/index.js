@@ -44,6 +44,12 @@ function darkProps(col, col2, col3, col4) {
   hrLine.style.background = col4;
 }
 
+function toggleStickyBg() {
+  !dark
+    ? (header.style.background = 'rgba(255, 255, 255, 1.0)')
+    : (header.style.background = '#14213d');
+}
+
 function toggleDarkMode() {
   container.classList.toggle('dark');
   if (dark) {
@@ -58,7 +64,8 @@ function toggleDarkMode() {
     headerLinks.forEach(hl => (hl.style.color = 'white'));
   }
   dark = !dark;
-  // });
+
+  toggleStickyBg();
 }
 
 // menu fade animation
@@ -90,9 +97,7 @@ const stickyNav = function (entries) {
     header.classList.add('sticky');
     arrowUp.classList.remove('hidden');
     if (header.classList.contains('sticky')) {
-      !dark
-        ? (header.style.background = 'rgba(255, 255, 255, 1.0)')
-        : (header.style.background = '#14213d');
+      toggleStickyBg();
     }
   } else {
     header.style.background = 'none';

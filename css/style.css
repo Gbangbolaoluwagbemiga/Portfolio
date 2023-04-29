@@ -345,6 +345,9 @@ img {
     text-align: center;
     margin-top: 2rem;
   }
+  .nav--item-1 {
+    margin-top: 0.25rem;
+  }
   .nav__links {
     display: none;
     z-index: 999;
@@ -424,6 +427,10 @@ img {
     font-size: 2rem;
     padding: 1.25rem;
   }
+  /* #section--contact {
+    position: absolute;
+    bottom: 5;
+  } */
 }
 
 /* larger screen responsiveness */
