@@ -236,9 +236,7 @@ const allSections = document.querySelectorAll('.sections');
 
 const revealSection = function (entries, observer) {
   // Removal of tech stack section on desktop view
-  if (mediaQueryList.matches) {
-    techStack.classList.remove('sections');
-  }
+
   const [entry] = entries;
 
   if (!entry.isIntersecting) return;
