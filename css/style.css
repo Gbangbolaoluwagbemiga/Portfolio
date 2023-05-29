@@ -380,6 +380,7 @@ img {
     font-size: 1.5rem;
   }
   .dummy--pics {
+    margin-top: 0;
     width: 85vw;
     height: 40vh;
   }
@@ -466,6 +467,11 @@ img {
   }
   .skill-name {
     width: 60%;
+  }
+  .dummy--pics {
+    position: absolute;
+    top: 15%;
+    height: 55vh;
   }
 
   .back-up {
