@@ -462,8 +462,14 @@ img {
     font-weight: 700;
   }
   .profile--pics img {
+    width: 95%;
     height: 25rem;
     margin: 2rem 0;
+  }
+  .my-image.middle {
+    position: absolute;
+    top: 15%;
+    width: 90%;
   }
   .skill-name {
     width: 60%;

@@ -183,6 +183,7 @@ const typed = new Typed('.typing', options);
 const readMoreText = document.querySelector('.read--more');
 const chooseView = document.querySelector('.choose--view');
 const chooseViewText = document.querySelector('.choose--view--text');
+const myProfilePics = document.querySelector('.my-image');
 
 chooseView.addEventListener('click', function () {
   readMoreText.classList.toggle('hidden');
@@ -198,9 +199,11 @@ chooseView.addEventListener('click', function () {
   }
   if (!mediaQueryList.matches) {
     if (!readMoreText.classList.contains('hidden') && !mediaQueryList.matches) {
-      subHeader.style.height = '33rem';
+      subHeader.style.height = '35rem';
+      myProfilePics.classList.add('middle');
     } else {
-      subHeader.style.height = '30rem';
+      subHeader.style.height = '32rem';
+      myProfilePics.classList.remove('middle');
     }
   }
 });
