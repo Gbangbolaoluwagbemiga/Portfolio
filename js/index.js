@@ -192,17 +192,17 @@ chooseView.addEventListener('click', function () {
     : (chooseViewText.innerText = 'see less');
   if (mediaQueryList.matches) {
     if (!readMoreText.classList.contains('hidden') && mediaQueryList.matches) {
-      subHeader.style.height = '132vh';
+      subHeader.style.height = '135vh';
     } else {
-      subHeader.style.height = '92vh';
+      subHeader.style.height = '95vh';
     }
   }
   if (!mediaQueryList.matches) {
     if (!readMoreText.classList.contains('hidden') && !mediaQueryList.matches) {
-      subHeader.style.height = '35rem';
+      subHeader.style.height = '38rem';
       myProfilePics.classList.add('middle');
     } else {
-      subHeader.style.height = '32rem';
+      subHeader.style.height = '35rem';
       myProfilePics.classList.remove('middle');
     }
   }
