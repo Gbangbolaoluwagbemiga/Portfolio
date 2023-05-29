@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.25rem;
 }
 html {
   scroll-behavior: smooth;
@@ -105,6 +106,11 @@ hr {
 }
 
 /* Header text */
+.default-text,
+.typing {
+  font-size: 1.75rem;
+}
+
 .sub-header {
   margin-top: 2.5rem;
   height: 30rem;
@@ -131,8 +137,8 @@ hr {
 #btns {
   width: 100%;
   text-align: center;
-  padding: 5px;
-  font-size: 16px;
+  padding: 12px 8px;
+  font-size: 1.25rem;
   background: transparent;
   border: 2px solid var(--white);
   color: var(--white);
@@ -278,6 +284,9 @@ a #btns:hover {
   padding: 1.5rem;
   margin: auto;
 }
+.social-icon:hover {
+  font-size: 3rem;
+}
 /* project sections */
 .tech-stack {
   background-color: var(--cool-orange);
@@ -364,8 +373,12 @@ img {
   .animated--text {
     width: 95%;
     margin-bottom: 15px;
+    font-size: 2.5rem;
   }
-
+  .default-text,
+  .typing {
+    font-size: 1.5rem;
+  }
   .dummy--pics {
     width: 85vw;
     height: 40vh;
@@ -382,7 +395,7 @@ img {
 
   .sub-header {
     margin: 3rem 0;
-    height: 77vh;
+    height: 92vh;
   }
   .pretext {
     margin-right: 0;
@@ -404,9 +417,12 @@ img {
   .theme {
     left: 85%;
   }
+  .ham-icon {
+    margin-top: 10px;
+  }
   .ham-icon,
   .cancel-icon {
-    font-size: 5vw;
+    font-size: 6vw;
     display: block;
     top: 5px;
     transition: all 2s;
@@ -426,6 +442,9 @@ img {
   .social-icon {
     font-size: 2rem;
     padding: 1.25rem;
+  }
+  .social-icon:hover {
+    font-size: 2.25rem;
   }
   /* #section--contact {
     position: absolute;
