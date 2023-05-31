@@ -202,24 +202,6 @@ a #btns:hover {
 }
 
 /* section 3 skills acquired */
-.skills-acquired {
-  width: 10vw;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-.skills-acquired:hover {
-  width: 12vw;
-  /* background-color: red; */
-}
-.technical--heading,
-.about__heading {
-  text-align: center;
-  color: var(--titles);
-}
-
-.skill--content {
-  transition: all 0.5s;
-}
 
 .btn-skills {
   border-radius: 10px;
@@ -231,9 +213,63 @@ a #btns:hover {
   border: 2px solid var(--cool-orange);
   transition: all 0.5s;
 }
-/* section 3 special */
+
+/* Section 2 tech stack */
+.tech-stack-container {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.tech-item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.tech-connector {
+  width: 7rem;
+  border-radius: 2rem;
+  padding: 12px;
+  background: var(--titles);
+  /* position: absolute; */
+  /* z-index: -1; */
+}
+
+/* section 3 special 
+
 .skills-acquired {
   transition: transform 0.4s;
+}
+
+.skill--content {
+  transition: all 0.5s;
+}
+
+.skills-acquired {
+  width: 10vw;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.skills-acquired:hover {
+  width: 12vw;
+  background-color: red;
+}
+.technical--heading,
+.about__heading {
+  text-align: center;
+  color: var(--titles);
 }
 
 .skill-name {
@@ -261,7 +297,7 @@ a #btns:hover {
 
 .skill-icon-text:hover .skill-name {
   transform: rotateX(0deg);
-}
+}*/
 
 /* section contact */
 
@@ -407,6 +443,7 @@ img {
     position: absolute;
     width: 20vw;
     left: 70%;
+    /* margin-top: 5px; */
     transition: all 1s;
   }
   .logo--name,
@@ -418,9 +455,7 @@ img {
   .theme {
     left: 85%;
   }
-  .ham-icon {
-    margin-top: 10px;
-  }
+
   .ham-icon,
   .cancel-icon {
     font-size: 6vw;
@@ -476,8 +511,8 @@ img {
   }
   .dummy--pics {
     position: absolute;
-    top: 15%;
-    height: 55vh;
+    top: 10%;
+    height: 50vh;
   }
 
   .back-up {
@@ -487,5 +522,11 @@ img {
   }
   .card {
     margin: 0 1.75rem;
+  }
+  /* Tech stack */
+  .tech-stack-container {
+    margin-top: 8rem;
+    width: 250px;
+    height: 350px;
   }
 }
