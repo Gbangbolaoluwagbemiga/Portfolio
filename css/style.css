@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.1rem;
 }
 html {
   scroll-behavior: smooth;
@@ -217,7 +216,7 @@ a #btns:hover {
 /* Section 2 tech stack */
 .tech-stack-container {
   position: relative;
-  width: 200px;
+  width: 100px;
   height: 300px;
   display: flex;
   justify-content: center;
