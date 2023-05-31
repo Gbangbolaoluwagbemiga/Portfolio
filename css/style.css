@@ -136,7 +136,7 @@ hr {
 #btns {
   width: 100%;
   text-align: center;
-  padding: 12px 8px;
+  padding: 10px;
   font-size: 1.25rem;
   background: transparent;
   border: 2px solid var(--white);
@@ -239,64 +239,13 @@ a #btns:hover {
 
 .tech-connector {
   width: 7rem;
+  text-align: center;
   border-radius: 2rem;
   padding: 12px;
   background: var(--titles);
   /* position: absolute; */
   /* z-index: -1; */
 }
-
-/* section 3 special 
-
-.skills-acquired {
-  transition: transform 0.4s;
-}
-
-.skill--content {
-  transition: all 0.5s;
-}
-
-.skills-acquired {
-  width: 10vw;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-.skills-acquired:hover {
-  width: 12vw;
-  background-color: red;
-}
-.technical--heading,
-.about__heading {
-  text-align: center;
-  color: var(--titles);
-}
-
-.skill-name {
-  position: absolute;
-  bottom: 30%;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background-color: var(--cool-orange);
-  color: var(--white);
-  font-size: 15px;
-  text-align: center;
-  border-radius: 10px;
-  transform: rotateX(90deg);
-  transition: transform 0.5s;
-  transform-origin: bottom;
-}
-.skill-icon-text {
-  margin: 2rem 0;
-}
-
-.skill-icon-text:hover img {
-  transform: rotateX(90deg);
-}
-
-.skill-icon-text:hover .skill-name {
-  transform: rotateX(0deg);
-}*/
 
 /* section contact */
 
